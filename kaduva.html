@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaduva-CINEMICA</title>
+    <link rel="stylesheet" href="css/movies1.css">
+    <script type="text/javascript" src="js/movies.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="movie-name.js"></script>
+</head>
+
+<body>
+    <!-- ===============Header=================== -->
+    <section class="header">
+        <header>
+            <nav id="navbar">
+                <div class="logo">
+                    <img src="./images/logo1.png" alt="brandlogo">
+                    <div>CINEMICA</div>
+                </div>
+
+                <div class="Searchbox">
+                    <input type="text" placeholder="Search for Movies,Events,Plays,Sports,Activities" minlength="1" required>
+                    <button type="submit" class="Seachicon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div>
+                    <button class="menuimage" onclick="showhidemenu()"><img src="./images/menu1.png"
+                            alt="menu"></button>
+                </div>
+
+
+            </nav>
+
+            <nav id="navbar2">
+                <div class="opt1">
+                    <ul>
+                        <li class="list"><a href="HomePage.html ">Home</a></li>
+                        <li class="list"><a href="Movies.html">Movies</a></li>
+                        <li class="list"><a href="stream.html">Stream </a></li>
+                        <li class="list"><a href="events.html">Events</a></li>
+                        <li class="list"><a href="plays.html">Plays</a></li>
+                        <li class="list"><a href="sports.html">Sports</a></li>
+                        <li class="list"><a href="activites.html">Activities</a></li>
+
+                    </ul>
+
+                </div>
+                <div class="opt2">
+                    <ul>
+                        <li class="list"><a href="ListYourShow.html">ListYourShows</a></li>
+                        <li class="list"><a href="Corporates.html">Corporates</a></li>
+                        <li class="list"><a href="offers.html">Offers</a></li>
+                        <li class="list"><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="myslidermenu">
+
+                <div class="menuheader">
+                    <H2>Hey!<i class="fa-solid fa-circle-xmark" onclick="showhidemenu()"></i></H2>
+                </div>
+                <div id="unlock">
+                    <img src="./images/rewards_login.avif" alt="img">
+                    <p>Unlock Special Offers & great benefits</p>
+                    <button class="btn2signin">Login/Register</button>
+                </div>
+
+                <ul>
+                    <li><i class="fa-solid fa-bell"></i>
+                        <p>Notifications</p>
+                        <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </li>
+                    <li><i class="fa-regular fa-comment-dots"></i>
+                        <p>Help & Support</p>
+                        <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </li>
+                    <li><i class="fa-solid fa-award"></i>
+                        <p>Rewards</p>
+                        <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </li>
+                    <li><i class="fa-solid fa-hand-holding-heart"></i>
+                        <p>BookASmile</p>
+                        <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </section>
+    <!-- ==============main============ -->
+
+    <section class="main">
+
+        <div class="banner">
+            <img src="./images/kaduva-banner.jpg" alt="">
+        </div>
+        <div class="banner-details">
+            <div class="m-poster">
+                <img class="poster" src="./images/Kaduva-poster.jpg">
+                <h4 class="heart"><i class="fa fa-heart" style="font-size:20px;color:red"></i> 86% 13.8k Votes </h4>
+            </div>
+            <h1 class="heading" id="movie-name">KADUVA</h1>
+            <p class="quality">2D</p>
+            <p class="languages">Hindi, Malyalam, Tamil, Telugu</p>
+            <h2 class="subheading">2h 35m •Action, Drama</h2>
+            <h3 class="subheading2">Released on 30 July 2022</h3>
+            <button class="main-btn movie-name"  onclick="location.href='SelectTheatre.html'">Book Ticket</button>
+            <button onclick="window.location='https://www.imdb.com/title/tt11127404/?ref_=fn_al_tt_1'" class="yellow-btn">IMDb <i class="fas fa-angle-right ps-3"></i></button>
+            <button onclick="window.location='https://www.youtube.com/watch?v=KN2HFjW3eTk'" class="trailerbtn">Watch
+            Trailer
+            <span><i class="fa fa-play"></i></span></button>
+            <div class="share-button">
+                <span> SHARE </span>
+                <a href="https://twitter.com/messages"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/direct/inbox/"><i class="fab fa-instagram"></i></a>
+                <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ====================About=============== -->
+    <section class="movie-about">
+        <div class="movie-info">
+            <div class="about">
+                <h2>About</h2>
+            </div>
+            <div class="about-movie">
+                <p>Set in the late 90s, Kaduva revolves around the life of a young rubber planter from Mundakayam and his rivalry with a high ranking officer in the Kerala Police.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="dashed">
+
+    <!-- ===========Offer============= -->
+
+    <section class="offer">
+        <div class="offer-title">
+            <h2>Applicable Offers</h2>
+        </div>
+        <div class="swiper offer-slider">
+            <div class="offer-slide">
+                <img class="img1" src="./images/movie-ticket.png">
+                <h3>WATCH THESE MOVIE FOR FREE!</h3>
+                <h4>Limited Period Offer</h4>
+                <h5>*T&C apply</h5>
+            </div>
+            <div class="offer-slide">
+                <img class="img2" src="./images/movie-ticket.png">
+                <h3>Secure your seat, before it's too Late!!</h3>
+                <h4>Apply Code OAP20, Get FLAT 20% OFF</h4>
+            </div>
+        </div>
+    </section>
+
+    <hr class="dashed">
+
+    <!-- ========Cast================ -->
+    <section class="cast">
+        <div class="cast-heading">
+            <h2>Cast</h2>
+        </div>
+        <div class="cast-slider">
+            <!-- 1 -->
+            <div class="cast-slide">
+                <div class="cast-img">
+                    <img src="./images/vivek-oberoi-kaduva.jpg" alt="">
+                </div>
+                <div class="cast-details">
+                    <div class="cast-name">
+                        <h5>Vivek Oberoi</h5>
+                    </div>
+                    <div class="role-name">
+                        <h6>as Joseph Chandy I.P.S.</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class=" cast-slide">
+                <div class="cast-img">
+                    <img src="./images/main-actor=kaduva.jpg" alt="">
+                </div>
+                <div class="cast-details">
+                    <div class="cast-name">
+                        <h5>Prithviraj Sukumaran</h5>
+                    </div>
+                    <div class="role-name">
+                        <h6>as Kaduvakunnel Kuriyachan</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="cast-slide">
+                <div class="cast-img">
+                    <img src="./images/samyuktha-menon-kaduva.jpg" alt="">
+                </div>
+                <div class="cast-details">
+                    <div class="cast-name">
+                        <h5>Samyuktha Menon</h5>
+                    </div>
+                    <div class="role-name">
+                        <h6>as Elsa</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4  -->
+            <div class="cast-slide">
+                <div class="cast-img">
+                    <img src="./images/siddique-kaduva.jpg" alt="">
+                </div>
+                <div class="cast-details">
+                    <div class="cast-name">
+                        <h5>Siddique</h5>
+                    </div>
+                    <div class="role-name">
+                        <h6>as D.G.P. Rajasekharan Marar I.P.S.</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- 5  -->
+            <div class="cast-slide">
+                <div class="cast-img">
+                    <img src="./images/arjun-asokan-kaduva.jpg" alt="">
+                </div>
+                <div class="cast-details">
+                    <div class="cast-name">
+                        <h5>Arjun Ashokan</h5>
+                    </div>
+                    <div class="role-name">
+                        <h6>as Victor</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="cast-slide">
+                <div class="cast-img">
+                    <img src="./images/priyanka-nair-kaduva.avif" alt="">
+                </div>
+                <div class="cast-details">
+                    <div class="cast-name">
+                        <h5>Priyanka Nair</h5>
+                    </div>
+                    <div class="role-name">
+                        <h6>as Merin Joseph</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- 7 -->
+            <div class="cast-slide">
+                <div class="cast-img">
+                    <img src="./images/baiju-santhosh-kaduva.avif" alt="">
+                </div>
+                <div class="cast-details">
+                    <div class="cast-name">
+                        <h5>Baiju Santhosh</h5>
+                    </div>
+                    <div class="role-name">
+                        <h6>Actor</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <hr class="dashed">
+
+    <!-- ======crew============== -->
+    <section class="crew">
+        <div class="crew-heading">
+            <h2>Crew</h2>
+        </div>
+        <div class="crew-slider">
+            <!-- 1 -->
+            <div class="crew-slide">
+                <div class="cast-img">
+                    <img src="./images/shaji-kailas-kaduva.jpg" alt="">
+                </div>
+                <div class="crew-details">
+                    <div class="crew-name">
+                        <h5>Shaji Kailas</h5>
+                    </div>
+                    <div class="role-name">
+                        <h6>Director</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2  -->
+            <div class="crew-slide">
+                <div class="cast-img">
+                    <img src="./images/supriya-menon-kaduva.avif" alt="">
+                </div>
+                <div class="crew-details">
+                    <div class="crew-name">
+                        <h5>Supriya Menon</h5>
+                    </div>
+                    <div class="role-name">
+                        <h6>Producer</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="crew-slide">
+                <div class="cast-img">
+                    <img src="./images/jakes-bejoy-kaduva.jpg" alt="">
+                </div>
+                <div class="crew-details">
+                    <div class="crew-name">
+                        <h5>Jakes Bejoy</h5>
+                    </div>
+                    <div class="role-name">
+                        <h6>Musician</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="crew-slide">
+                <div class="cast-img">
+                    <img src="./images/sujith-vasudev-kaduva.jpg" alt="">
+                </div>
+                <div class="crew-details">
+                    <div class="crew-name">
+                        <h5>Sujith Vasudev</h5>
+                    </div>
+                    <div class="role-name">
+                        <h6>Cinematography</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <hr class="dashed">
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+        <div class="review-heading">
+            <h3>Top-Reviews</h3>
+        </div>
+        <div class="swiper review-slider">
+            <!----------1--------- -->
+            <div class="swiper-wrapper slide">
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./images/pic1.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Rachel Smith</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-p">It is a decent movie, but it focus much on comic reliefs. Christian Bale is under utilized, Gorr should have given more screen time and the back story would make it a better relief.</p>
+                </div>
+                <!----------2------------ -->
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./images/pic2.jpg" alt="">
+                        <div class="user-info">
+                            <h3>John Taylor</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-p">Thor: Love & Thunder is a heartfelt, funny, romantic, and amazing superhero film that welcomes newcomers to the MCU and Thor as much as it does add to the nuance of the character for returning fans. </p>
+                </div>
+                <!-----------3---------- -->
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./images/pic3.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Jack Victor</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-p">It's A Great Enjoyable Film Without Any Depth And Not Justify With The Villain</p>
+                </div>
+                <!---------4---------->
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./images/pic4.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Emma Stone</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-p">Really loved the movie...great performances by actor, actress and villan ....Plash has also done very good job Hope this film will work good...</p>
+                </div>
+                <!-----------5---------- -->
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./images/pic5.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Monika Walker</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-p">the BGM and editing is really good , setting the tone perfectly which complements the brilliant cast and direction</p>
+                </div>
+                <!-----------6---------- -->
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./images/pic6.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Paul Fedrick</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-p">Just ok ok type movie. I will give just 3 stars.</p>
+                </div>
+                <!-----------7---------- -->
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./images/pic9.png" alt="">
+                        <div class="user-info">
+                            <h3>David Hector</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-p">Great movie produce by producer and everyone did good job. Congratulation to the whole team</p>
+                </div>
+                <!-----------8---------- -->
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./images/pic7.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Emila Johnson</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-p">Great plot twist...I really Enjoyed the whole movie.</p>
+                </div>
+                <!-----------9---------- -->
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./images/pic9.png" alt="">
+                        <div class="user-info">
+                            <h3>Lalit Ayyer</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-p">Good!</p>
+                </div>
+                <!-----------10---------- -->
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./images/pic9.png" alt="">
+                        <div class="user-info">
+                            <h3>Robert Symond</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-p">Not disppoint at all...awsome movie. Kudos to the entire team</p>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+    <hr class="dashed">
+
+    <!-- =======recommandation========= -->
+    <section class="movie-recommendation">
+        <div class="recommend-heading">
+            <h>You might also like</h>
+        </div>
+        <div class="view-all">
+            <a href="Movies.html">View all</a>
+        </div>
+        <div class="swiper recommend-slider">
+            <div class="swiper-wrapper recommandation">
+
+                <div class="swiper-slide box">
+                    <div class="slide-img">
+                        <img alt="" src="./images/thorposter.jpg">
+                        <div class="overlay">
+                            <a href="thor.html" class="buy-btn">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="thor.html">Thor: Love and Thunder</a>
+                            <br>
+                            <span class="stars">Action/Adventure/Fantacy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!----------2------------------------------------>
+
+                <div class="swiper-slide box">
+                    <div class="slide-img">
+                        <img alt="" src="./images/dharmaveer-poster.avif">
+                        <div class="overlay">
+                            <a href="dharmaveer.html" class="buy-btn">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="dharmaveer.html">Dharmaveer</a>
+                            <br>
+                            <span>Biography/Drama</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!---------------3------------------------------------>
+
+                <div class="swiper-slide box">
+                    <div class="slide-img">
+                        <img alt="" src="./images/minions-the-rise-of-gru-poster.avif">
+                        <div class="overlay">
+                            <a href="minions.html" class="buy-btn">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="minions.html">Minions: the rise of gru</a>
+                            <br>
+                            <span>Adventure/Animation/Comedy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!---------------4------------------------------------>
+
+                <div class="swiper-slide box">
+                    <div class="slide-img">
+                        <img alt="" src="./images/jugjugg-jeeyo-poster.avif">
+                        <div class="overlay">
+                            <a href="Jugjugg_jeeyo.html" class="buy-btn">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="Jugjugg_jeeyo.html">Jugjugg Jeeyo</a>
+                            <br>
+                            <span>Family/Comdey/Drama</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!---------------5------------------------------------>
+
+                <div class="swiper-slide box">
+                    <div class="slide-img">
+                        <img alt="" src="./images/jujutsu-kaisen-poster.avif">
+                        <div class="overlay">
+                            <a href="jujutsu.html" class="buy-btn">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="jujutsu.html">Jujutsu Kaisen</a>
+                            <br>
+                            <span>Action/Animation/Fantacy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!----------------------6------------------------------------>
+
+                <div class="swiper-slide box">
+                    <div class="slide-img">
+                        <img alt="" src="./images/top-gun-maverick-poster.avif">
+                        <div class="overlay">
+                            <a href="top_gun.html" class="buy-btn">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="top_gun.html">Top Gun: Maverick</a>
+                            <br>
+                            <span>Action/Drama</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------------7------------------------------------>
+
+                <div class="swiper-slide box">
+                    <div class="slide-img">
+                        <img alt="" src="./images/rashtra-kavach-om-poster.jpg">
+                        <div class="overlay">
+                            <a href="rastra_kavach_om.html" class="buy-btn">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="rastra_kavach_om.html">Rashtra kavach om</a>
+                            <br>
+                            <span>Action/Drama</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!---------------8------------------------------------>
+
+                <div class="swiper-slide box">
+                    <div class="slide-img">
+                        <img alt="" src="./images/vickida-no-varghodo-poster.avif">
+                        <div class="overlay">
+                            <a href="vikida.html" class="buy-btn">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="vikida.html">Vickida no varghodo</a>
+                            <br>
+                            <span>Comedy/Romantic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <hr class="dashed">
+
+    <div class="pageinfostrip">
+        <h4>Home → Kaduva</h4>
+    </div>
+
+    <footer class="cinemafooter">
+        <div class="listyourshow">
+            <img src="./images/hut.svg" alt="hut">
+            <div class="fsString1">List your Show</div>
+            <div class="listyourString">Got a show, event, activity or a great experience? Partner with us and get listed on Cinemica</div>
+            <button class="contactus">Contact today!</button>
+        </div>
+        <div class="customersupport">
+            <div class="cs-support">
+                <div class="support">
+                    <img src="./images/help-desk.png" alt="img" class="img1">
+                    <div class="support-String">24/7 CUSTOMER CARE</div>
+                </div>
+                <div class="support">
+                    <img src="./images/movie-ticket.png" alt="img" class="img2">
+                    <div class="support-String">RESEND BOOKING CONFIRMATIONS</div>
+                </div>
+                <div class="support">
+                    <img src="./images/newsletter.png" alt="img" class="img3">
+                    <div class="support-String">SUBSCRIBE TO THE NEWSLETTER</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">MOVIES NOW SHOWING</div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">Shamshera</span> |
+                <span class="ms-movies">Thor :Love and Thunder</span> |
+                <span class="ms-movies">Hit :The First Case</span> |
+                <span class="ms-movies">Rocketry</span> |
+                <span class="ms-movies">Shabassh Mithu</span> |
+                <span class="ms-movies">JugJugg Jeeyo</span> |
+                <span class="ms-movies">Minions The Rise of Gru</span> |
+                <span class="ms-movies">Judaa Hoke Bhi</span> |
+                <span class="ms-movies">Tamasha</span> |
+                <span class="ms-movies">Rashra Kavach :OM</span>
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">UPCOMING MOVIES </div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">Maaraya</span> |
+                <span class="ms-movies">Jatts Land</span> |
+                <span class="ms-movies">Rk/RKAY</span> |
+                <span class="ms-movies">Ward 126</span> |
+                <span class="ms-movies">Malayankunju</span> |
+                <span class="ms-movies">Meelo Okadu</span> |
+                <span class="ms-movies">Sri Ranga</span> |
+                <span class="ms-movies">Droupodi The Horror Night</span> |
+                <span class="ms-movies">Hi Five : Fun and Gun</span> |
+                <span class="ms-movies">Sahobashe</span> |
+                <span class="ms-movies">Nadhi</span> |
+                <span class="ms-movies">Kuri</span> |
+                <span class="ms-movies">Paws of Fury :THe Legend of Hank</span>
+                <div>
+                    <span class="ms-movies">Mister Manju</span> |
+                    <span class="ms-movies">Jagannatakam (2022)</span> |
+                    <span class="ms-movies">Darja</span> |
+                    <span class="ms-movies">Maha</span> |
+                    <span class="ms-movies">Padma Sri Kaur Singh</span> |
+                    <span class="ms-movies">Thank you</span>
+                </div>
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">MOVIES BY GENRE</div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">Drama Movies</span> |
+                <span class="ms-movies">Action Movies</span> |
+                <span class="ms-movies">Comedy Movies</span> |
+                <span class="ms-movies">Thriller Movies</span> |
+                <span class="ms-movies">Adventure Movies</span> |
+                <span class="ms-movies">Romantic Movies</span> |
+                <span class="ms-movies">Biography Movies</span> |
+                <span class="ms-movies">Fantasy Movies</span> |
+                <span class="ms-movies">Animation Movies</span> |
+                <span class="ms-movies">Musical Movies</span> |
+                <span class="ms-movies">Sci-Fi Movies</span> |
+
+
+                <div>
+                    <span class="ms-movies">Period Movies</span> |
+                    <span class="ms-movies">Supernatural Movies</span> |
+                    <span class="ms-movies">Tragedy Movies</span> |
+                    <span class="ms-movies">Adaption Movies</span> |
+                    <span class="ms-movies">Devotional Movies</span> |
+                    <span class="ms-movies">Mystery Movies</span> |
+                    <span class="ms-movies">Historical Movies</span> |
+                    <span class="ms-movies">Sports Movies</span> |
+                    <span class="ms-movies">Classic Movies</span> |
+                    <span class="ms-movies">Adult Movies</span> |
+                    <span class="ms-movies">Crime Movies</span> |
+
+
+
+                </div>
+                <div>
+                    <span class="ms-movies">Political Movies</span> |
+                    <span class="ms-movies">Screening Movies</span> |
+                    <span class="ms-movies">Suspense Movies</span> |
+                    <span class="ms-movies">Horror Movies</span> |
+                    <span class="ms-movies">War Movies</span> |
+                    <span class="ms-movies">Heist Movies</span> |
+                    <span class="ms-movies">Mythological Movies</span> |
+                    <span class="ms-movies">Noir Movies</span> |
+                    <span class="ms-movies">Anime Movies</span> |
+                    <span class="ms-movies">Psycological Movies</span> |
+                    <span class="ms-movies">Bollywood Movies</span>
+                </div>
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">MOVIES BY LANGUAGE</div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">Movies in Hindi</span> |
+                <span class="ms-movies">Movies in English</span> |
+                <span class="ms-movies">Movies in Marathi</span> |
+                <span class="ms-movies">Movies in Gujrati</span> |
+                <span class="ms-movies">Movies in Tamil</span> |
+                <span class="ms-movies">Movies in Telugu</span> |
+                <span class="ms-movies">Movies in Malayalam</span> |
+                <span class="ms-movies">Movies in Nepali</span> |
+                <span class="ms-movies">Movies in Tulu</span> |
+                <span class="ms-movies">Movies in Japanese</span> |
+
+
+
+                <div>
+                    <span class="ms-movies">Movies in Portuguese</span> |
+                    <span class="ms-movies">Movies in Chattisgarhi</span> |
+                    <span class="ms-movies">Movies in Konkani</span> |
+                    <span class="ms-movies">Movies in Rajasthani</span> |
+                    <span class="ms-movies">Movies in Khasi</span> |
+                    <span class="ms-movies">Movies in Assamese</span> |
+                    <span class="ms-movies">Movies in French</span> |
+                    <span class="ms-movies">Movies in Kannada</span> |
+                    <span class="ms-movies">Movies in bhojpuri</span> |
+                    <span class="ms-movies">Movies in Haryanvi</span> |
+
+                </div>
+                <div>
+                    <span class="ms-movies">Movies in English 7D</span> |
+                    <span class="ms-movies">Movies in Punjabi</span> |
+                    <span class="ms-movies">Movies in Oriya</span>
+                    <span class="ms-movies">Movies in Sindhi</span> |
+                    <span class="ms-movies">Movies in Bengali</span> |
+                </div>
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">PLAYS BY GENRE </div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">Drama Plays</span> |
+                <span class="ms-movies">Comedy Plays</span> |
+                <span class="ms-movies">Fantasy Plays</span> |
+                <span class="ms-movies">Thriller Plays</span> |
+                <span class="ms-movies">Musical Plays</span> |
+                <span class="ms-movies">Broadway Plays</span> |
+                <span class="ms-movies">Sci-Fi Plays</span> |
+                <span class="ms-movies">Period Plays</span> |
+                <span class="ms-movies">Tragedy Plays</span> |
+                <span class="ms-movies">ActionPlays</span> |
+                <span class="ms-movies">Adaption Plays</span> |
+                <span class="ms-movies">Mystery Plays</span> |
+
+                <div>
+
+                    <span class="ms-movies">Historical Plays</span> |
+                    <span class="ms-movies">Online Streaming Plays</span> |
+                    <span class="ms-movies">Classic Plays</span> |
+                    <span class="ms-movies">Adult Plays</span> |
+                    <span class="ms-movies">Contemporary Plays</span> |
+                    <span class="ms-movies">Tribute Plays</span> |
+                    <span class="ms-movies">Political Plays</span> |
+                    <span class="ms-movies">Suspense Plays</span> |
+                    <span class="ms-movies">Romantic Plays</span> |
+                    <span class="ms-movies">Biography Plays</span> |
+                    <span class="ms-movies">Horror Plays</span> |
+                </div>
+                <div>
+
+                    <span class="ms-movies">War Plays</span> |
+                    <span class="ms-movies">Adventure Plays</span> |
+                    <span class="ms-movies">Mythological Plays</span> |
+                    <span class="ms-movies">Noir Plays</span> |
+                    <span class="ms-movies">Psychological Plays</span> |
+                    <span class="ms-movies">Regional Plays</span>
+                </div>
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">EVENTS </div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">Comedy Shows</span> |
+                <span class="ms-movies">Workshops</span> |
+                <span class="ms-movies">Music Shows</span> |
+                <span class="ms-movies">Kids</span> |
+                <span class="ms-movies">Spirituality</span> |
+                <span class="ms-movies">Screening</span> |
+                <span class="ms-movies">Exhibitions</span> |
+                <span class="ms-movies">Talks</span> |
+                <span class="ms-movies">Meetups</span> |
+                <span class="ms-movies">Online Streaming Events</span> |
+                <span class="ms-movies">Award Shows</span> |
+                <span class="ms-movies">Conference</span> |
+                <span class="ms-movies">Vaccination</span> |
+                <div>
+
+                    <span class="ms-movies">Celebrity Wishes</span> |
+                    <span class="ms-movies">Beer Festival</span>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">HELP</div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">About US</span> |
+                <span class="ms-movies">Contact Us</span> |
+                <span class="ms-movies">Current Opening</span> |
+                <span class="ms-movies">Press Release</span> |
+                <span class="ms-movies">Press Coverage</span> |
+                <span class="ms-movies">Sitemap</span> |
+                <span class="ms-movies">FAQs</span> |
+                <span class="ms-movies">Terms and Conditions</span> |
+                <span class="ms-movies">Privacy Policy</span>
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">CINEMICA EXCLUSIVES</div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">Superstar</span> |
+                <span class="ms-movies">BookASmile</span> |
+                <span class="ms-movies">Corporate Vouchers</span> |
+                <span class="ms-movies">Gift Cards</span> |
+                <span class="ms-movies">List My Show</span> |
+                <span class="ms-movies">Offers</span> |
+                <span class="ms-movies">Stream</span> |
+                <span class="ms-movies">Buzz</span> |
+                <span class="ms-movies">Trailers</span>
+            </div>
+        </div>
+        <div class="footerlogo">
+            <hr class="hr-line2">
+            <div class="logo2">
+                <img src="./images/logo1.png" alt="logo">
+                <Span class="logostring">CINEMICA</Span>
+            </div>
+            <hr class="hr-line2">
+        </div>
+        <div class="Fr-mediaicons">
+            <img src="./images/icons8-facebook-50.png" alt="facebook">
+            <img src="./images/icons8-twitter-64.png" alt="facebook">
+            <img src="./images/icons8-instagram-50.png" alt="facebook">
+            <img src="./images/icons8-linkedin-60.png" alt="facebook">
+            <img src="./images/icons8-pinterest-50.png" alt="facebook">
+            <img src="./images/icons8-youtube-50.png" alt="facebook">
+        </div>
+        <div class="pagecopyright">
+            <div class="cp-line">Copyright 2022 @ Bigtree Entertainment Pvt. Ltd.All Rights Reserved</div>
+            <div class="cp-line">the content and images used on the site are copyright protected and copyrights vestes with the respective owner.The usage of the content and images on this website is intended to promise the works and no endordement of the artist
+            </div>
+            <div class="cp-line">shall be implied Unauthorized use is prohibited and punishable by law</div>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/movies.js"></script>
+    <script src="https://kit.fontawesome.com/2db247bd01.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

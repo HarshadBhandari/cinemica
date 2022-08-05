@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/stream.css">
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <img src="images/logo1.png" alt="brandlogo">
+                <div>CINEMICA</div>
+            </div>
+
+            <div class="Searchbox">
+                <input type="text" placeholder="Search for Movies,Events,Plays,Sports,Activities" minlength="1" required>
+                <button type="submit" class="Seachicon"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div>
+                <button class="menuimage" onclick="showhidemenu()"><img src="images/menu1.png" alt="menu" ></button>
+            </div>
+
+
+        </nav>
+
+        <nav id="navbar2">
+            <div class="opt1">
+                <ul>
+                    <li class="list"><a href="HomePage.html">Home</a></li>
+                    <li class="list"><a href="Movies.html">Movies</a></li>
+                    <li class="list"><a href="stream.html" class="active-page">Stream  </a></li>
+                    <li class="list"><a href="events.html">Events</a></li>
+                    <li class="list"><a href="plays.html">Plays</a></li>
+                    <li class="list"><a href="sports.html">Sports</a></li>
+                    <li class="list"><a href="activites.html">Activities</a></li>
+
+                </ul>
+
+            </div>
+            <div class="opt2">
+                <ul>
+                    <li class="list"><a href="ListYourShow.html">ListYourShows</a></li>
+                    <li class="list"><a href="Corporates.html">Corporates</a></li>
+                    <li class="list"><a href="offers.html">Offers</a></li>
+                    <li class="list"><a href="#">Gift Cards</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <div id="myslidermenu">
+
+            <div class="menuheader">
+                <H2>Hey!<i class="fa-solid fa-circle-xmark" onclick="showhidemenu()"></i></H2>
+
+            </div>
+            <div id="unlock">
+                <img src="images/rewards_login.avif" alt="img">
+                <p>Unlock Special Offers & great benefits</p>
+
+                <button class="btn2signin">Login/Register</button>
+            </div>
+
+            <ul>
+                <li><i class="fa-solid fa-bell"></i>
+                    <p>Notifications</p>
+                    <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+
+                </li>
+                <li><i class="fa-regular fa-comment-dots"></i>
+                    <p>Help & Support</p>
+                    <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                </li>
+                <li><i class="fa-solid fa-award"></i>
+                    <p>Rewards</p>
+                    <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+                </li>
+                <li><i class="fa-solid fa-hand-holding-heart"></i>
+                    <p>BookASmile</p>
+                    <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div id="streamimagescarousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="mycard-1">
+                        <div class="allmaterials">
+                            <div class="material-1">
+                                <img src="./images/black-friday2.avif" alt="black-friday2">
+                            </div>
+                            <div class="material-2">
+                                <div class="material-margin">
+                                    <div class="part-1">
+                                        <img src="./images/premiere-chip-tag.avif" alt="">
+                                        <h3>Brand new release every friday</h3>
+                                    </div>
+                                    <div class="part-2">
+                                        <h1>Black Friday (2022)</h1>
+                                        <h3>1h 24m - Comedy,Horror - 16+</h3>
+                                    </div>
+                                    <div class="part-3">
+                                        <h4>English</h4>
+                                        <p>A group of eccentric department store Employee are forced to defend themself from a horde<br>of monstrous humans,who have been infected by an alien parasite.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="mycard-2">
+                        <div class="allmaterials">
+                            <div class="allmaterials">
+                                <div class="material-1">
+                                    <img src="./images/myrrrr.avif" alt="black-friday2">
+                                </div>
+                                <div class="material-2">
+                                    <div class="material-margin">
+                                        <div class="part-1">
+                                            <img src="./images/premiere-chip-tag.avif" alt="">
+                                            <h3>Brand new release every friday</h3>
+                                        </div>
+                                        <div class="part-2">
+                                            <h1>RRR (Stream in Hindi)</h1>
+                                            <h3>3h 2m - Action,Drama,Historical,period - UA</h3>
+                                        </div>
+                                        <div class="part-3">
+                                            <h4>Hindi</h4>
+                                            <p>RRR is a period drama set in India during the 1920s revolcing around the inspiring journey of two<br>of the Indian freedom fighters-Alluri Sitaraman Raju and Komaram Bheema</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="mycard-3">
+                        <div class="allmaterials">
+                            <div class="allmaterials">
+                                <div class="material-1">
+                                    <img src="./images/mybatman.avif" alt="black-friday2">
+                                </div>
+                                <div class="material-2">
+                                    <div class="material-margin">
+                                        <div class="part-1">
+                                            <img src="./images/premiere-chip-tag.avif" alt="">
+                                            <h3>Brand new release every friday</h3>
+                                        </div>
+                                        <div class="part-2">
+                                            <h1>The Batman</h1>
+                                            <h3>2h 56m -Action,Adventure,Crime,Drama-UA</h3>
+                                        </div>
+                                        <div class="part-3">
+                                            <h4>English</h4>
+                                            <p>The caped crusader,Bruce Wayne joins hands with unlikely allies to unmask a sadistic serial<br>killer whos living body accross the Gotham city</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div id="priemierthisweek">
+        <div class="priemierthisweek-part1">
+            <h3>Premiere of the week</h3>
+        </div>
+        <div class="priemierthisweek-part2">
+            <div class="sm-Allcard">
+                <div class="sm-card">
+                    <img src="images/rrr.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/smp.avif" alt="thor">
+                </div>
+                <div class="sm-card" onclick="location.href='streamshow.html'">
+                    <img src="images/gangubai.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/batman.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/minmata.avif" alt="thor">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="browserbylanguage">
+        <div class="browserbylanguage-frame">
+            <div class="browserbylanguage-part1">
+                <h2>Browse movies by Language</h2>
+            </div>
+            <div class="browserbylanguage-part2">
+                <button class="language">Hindi</button>
+                <button class="language">English</button>
+                <button class="language">Marathi</button>
+                <button class="language">Chinese</button>
+            </div>
+        </div>
+    </div>
+    <div id="priemierthisweek">
+        <div class="priemierthisweek-part1">
+            <h3>TV Series</h3>
+            <p>Watch 1st episode for free</p>
+        </div>
+        <div class="priemierthisweek-part2">
+            <div class="sm-Allcard">
+                <div class="sm-card">
+                    <img src="images/darkwood.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/robot.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/sisters.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/hardsun.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/undercover.avif" alt="thor">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="priemierthisweek">
+        <div class="priemierthisweek-part1">
+            <h3>Collectors Edition</h3>
+            <p>Buy movie bundles on the go!</p>
+        </div>
+        <div class="priemierthisweek-part2">
+            <div class="sm-Allcard">
+                <div class="sm-card">
+                    <img src="images/farfromhm.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/annabela.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/wik2.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/conjur.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/focker.avif" alt="thor">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="priemierthisweek">
+        <div class="priemierthisweek-part1">
+            <h3>DC FanDome</h3>
+        </div>
+        <div class="priemierthisweek-part2">
+            <div class="sm-Allcard">
+                <div class="sm-card">
+                    <img src="images/vendata.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/sucidesquad.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/batmanreturns.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/shazam.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/justiceleague.avif" alt="thor">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="priemierthisweek">
+        <div class="priemierthisweek-part1">
+            <h3>Spotlight</h3>
+        </div>
+        <div class="priemierthisweek-part2">
+            <div class="sm-Allcard">
+                <div class="sm-card">
+                    <img src="images/spotlight.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/ghostbuster.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/dontbreath.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/venom.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/dangerous.avif" alt="thor">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="browserbylanguage">
+        <div class="browserbylanguage-frame">
+            <div class="browserbylanguage-part1">
+                <h2>Browse movies by genre based titles</h2>
+            </div>
+            <div class="browserbylanguage-part2">
+                <button class="language">Action</button>
+                <button class="language">Comedy</button>
+                <button class="language">Drama</button>
+                <button class="language">Thriller</button>
+            </div>
+        </div>
+    </div>
+    <div id="priemierthisweek">
+        <div class="priemierthisweek-part1">
+            <h3>Trending Right Now</h3>
+        </div>
+        <div class="priemierthisweek-part2">
+            <div class="sm-Allcard">
+                <div class="sm-card">
+                    <img src="images/assasins.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/malasana.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/heistofc.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/oneforall.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/gameofpower.avif" alt="thor">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="priemierthisweek">
+        <div class="priemierthisweek-part1">
+            <h3>Recent Premieres</h3>
+        </div>
+        <div class="priemierthisweek-part2">
+            <div class="sm-Allcard">
+                <div class="sm-card">
+                    <img src="images/ring.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/mountain.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/trip.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/mieserable.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/interview.avif" alt="thor">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="priemierthisweek">
+        <div class="priemierthisweek-part1">
+            <h3>Premieres of the week</h3>
+        </div>
+        <div class="priemierthisweek-part2">
+            <div class="sm-Allcard">
+                <div class="sm-card">
+                    <img src="images/reckoning.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/lantern.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/sixmin.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/black-friday2.avif" alt="thor">
+                </div>
+                <div class="sm-card">
+                    <img src="images/spidermon5.avif" alt="thor">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="cinemafooter">
+        <div class="listyourshow">
+            <img src="images/hut.svg" alt="hut">
+            <div class="fsString1">List your Show</div>
+            <div class="listyourString">Got a show,event,activity or a great experience? Partner with us and get listed on Cinemica</div>
+            <button class="contactus">Contact today!</button>
+        </div>
+        <div class="customersupport">
+            <div class="cs-support">
+                <div class="support">
+                    <img src="images/help-desk.png" alt="img" class="img1">
+                    <div class="support-String">24/7 CUSTOMER CARE</div>
+                </div>
+                <div class="support">
+                    <img src="images/movie-ticket.png" alt="img" class="img2">
+                    <div class="support-String">RESEND BOOKING CONFIRMATIONS</div>
+                </div>
+                <div class="support">
+                    <img src="images/newsletter.png" alt="img" class="img3">
+                    <div class="support-String">SUBSCRIBE TO THE NEWSLETTER</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">MOVIES NOW SHOWING</div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">Shamshera</span> |
+                <span class="ms-movies">Thor :Love and Thunder</span> |
+                <span class="ms-movies">Hit :The First Case</span> |
+                <span class="ms-movies">Rocketry</span> |
+                <span class="ms-movies">Shabassh Mithu</span> |
+                <span class="ms-movies">JugJugg Jeeyo</span> |
+                <span class="ms-movies">Minions The Rise of Gru</span> |
+                <span class="ms-movies">Judaa Hoke Bhi</span> |
+                <span class="ms-movies">Tamasha</span> |
+                <span class="ms-movies">Rashra Kavach :OM</span>
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">UPCOMING MOVIES </div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">Maaraya</span> |
+                <span class="ms-movies">Jatts Land</span> |
+                <span class="ms-movies">Rk/RKAY</span> |
+                <span class="ms-movies">Ward 126</span> |
+                <span class="ms-movies">Malayankunju</span> |
+                <span class="ms-movies">Meelo Okadu</span> |
+                <span class="ms-movies">Sri Ranga</span> |
+                <span class="ms-movies">Droupodi The Horror Night</span> |
+                <span class="ms-movies">Hi Five : Fun and Gun</span> |
+                <span class="ms-movies">Sahobashe</span> |
+                <span class="ms-movies">Nadhi</span> |
+                <span class="ms-movies">Kuri</span> |
+                <span class="ms-movies">Paws of Fury :THe Legend of Hank</span>
+                <div>
+                    <span class="ms-movies">Mister Manju</span> |
+                    <span class="ms-movies">Jagannatakam (2022)</span> |
+                    <span class="ms-movies">Darja</span> |
+                    <span class="ms-movies">Maha</span> |
+                    <span class="ms-movies">Padma Sri Kaur Singh</span> |
+                    <span class="ms-movies">Thank you</span>
+                </div>
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">MOVIES BY GENRE</div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">Drama Movies</span> |
+                <span class="ms-movies">Action Movies</span> |
+                <span class="ms-movies">Comedy Movies</span> |
+                <span class="ms-movies">Thriller Movies</span> |
+                <span class="ms-movies">Adventure Movies</span> |
+                <span class="ms-movies">Romantic Movies</span> |
+                <span class="ms-movies">Biography Movies</span> |
+                <span class="ms-movies">Fantasy Movies</span> |
+                <span class="ms-movies">Animation Movies</span> |
+                <span class="ms-movies">Musical Movies</span> |
+                <span class="ms-movies">Sci-Fi Movies</span> |
+
+
+                <div>
+                    <span class="ms-movies">Period Movies</span> |
+                    <span class="ms-movies">Supernatural Movies</span> |
+                    <span class="ms-movies">Tragedy Movies</span> |
+                    <span class="ms-movies">Adaption Movies</span> |
+                    <span class="ms-movies">Devotional Movies</span> |
+                    <span class="ms-movies">Mystery Movies</span> |
+                    <span class="ms-movies">Historical Movies</span> |
+                    <span class="ms-movies">Sports Movies</span> |
+                    <span class="ms-movies">Classic Movies</span> |
+                    <span class="ms-movies">Adult Movies</span> |
+                    <span class="ms-movies">Crime Movies</span> |
+
+
+
+                </div>
+                <div>
+                    <span class="ms-movies">Political Movies</span> |
+                    <span class="ms-movies">Screening Movies</span> |
+                    <span class="ms-movies">Suspense Movies</span> |
+                    <span class="ms-movies">Horror Movies</span> |
+                    <span class="ms-movies">War Movies</span> |
+                    <span class="ms-movies">Heist Movies</span> |
+                    <span class="ms-movies">Mythological Movies</span> |
+                    <span class="ms-movies">Noir Movies</span> |
+                    <span class="ms-movies">Anime Movies</span> |
+                    <span class="ms-movies">Psycological Movies</span> |
+                    <span class="ms-movies">Bollywood Movies</span>
+                </div>
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">MOVIES BY LANGUAGE</div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">Movies in Hindi</span> |
+                <span class="ms-movies">Movies in English</span> |
+                <span class="ms-movies">Movies in Marathi</span> |
+                <span class="ms-movies">Movies in Gujrati</span> |
+                <span class="ms-movies">Movies in Tamil</span> |
+                <span class="ms-movies">Movies in Telugu</span> |
+                <span class="ms-movies">Movies in Malayalam</span> |
+                <span class="ms-movies">Movies in Nepali</span> |
+                <span class="ms-movies">Movies in Tulu</span> |
+                <span class="ms-movies">Movies in Japanese</span> |
+
+
+
+                <div>
+                    <span class="ms-movies">Movies in Portuguese</span> |
+                    <span class="ms-movies">Movies in Chattisgarhi</span> |
+                    <span class="ms-movies">Movies in Konkani</span> |
+                    <span class="ms-movies">Movies in Rajasthani</span> |
+                    <span class="ms-movies">Movies in Khasi</span> |
+                    <span class="ms-movies">Movies in Assamese</span> |
+                    <span class="ms-movies">Movies in French</span> |
+                    <span class="ms-movies">Movies in Kannada</span> |
+                    <span class="ms-movies">Movies in bhojpuri</span> |
+                    <span class="ms-movies">Movies in Haryanvi</span> |
+
+                </div>
+                <div>
+                    <span class="ms-movies">Movies in English 7D</span> |
+                    <span class="ms-movies">Movies in Punjabi</span> |
+                    <span class="ms-movies">Movies in Oriya</span>
+                    <span class="ms-movies">Movies in Sindhi</span> |
+                    <span class="ms-movies">Movies in Bengali</span> |
+                </div>
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">PLAYS BY GENRE </div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">Drama Plays</span> |
+                <span class="ms-movies">Comedy Plays</span> |
+                <span class="ms-movies">Fantasy Plays</span> |
+                <span class="ms-movies">Thriller Plays</span> |
+                <span class="ms-movies">Musical Plays</span> |
+                <span class="ms-movies">Broadway Plays</span> |
+                <span class="ms-movies">Sci-Fi Plays</span> |
+                <span class="ms-movies">Period Plays</span> |
+                <span class="ms-movies">Tragedy Plays</span> |
+                <span class="ms-movies">ActionPlays</span> |
+                <span class="ms-movies">Adaption Plays</span> |
+                <span class="ms-movies">Mystery Plays</span> |
+
+                <div>
+
+                    <span class="ms-movies">Historical Plays</span> |
+                    <span class="ms-movies">Online Streaming Plays</span> |
+                    <span class="ms-movies">Classic Plays</span> |
+                    <span class="ms-movies">Adult Plays</span> |
+                    <span class="ms-movies">Contemporary Plays</span> |
+                    <span class="ms-movies">Tribute Plays</span> |
+                    <span class="ms-movies">Political Plays</span> |
+                    <span class="ms-movies">Suspense Plays</span> |
+                    <span class="ms-movies">Romantic Plays</span> |
+                    <span class="ms-movies">Biography Plays</span> |
+                    <span class="ms-movies">Horror Plays</span> |
+                </div>
+                <div>
+
+                    <span class="ms-movies">War Plays</span> |
+                    <span class="ms-movies">Adventure Plays</span> |
+                    <span class="ms-movies">Mythological Plays</span> |
+                    <span class="ms-movies">Noir Plays</span> |
+                    <span class="ms-movies">Psychological Plays</span> |
+                    <span class="ms-movies">Regional Plays</span>
+                </div>
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">EVENTS </div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">Comedy Shows</span> |
+                <span class="ms-movies">Workshops</span> |
+                <span class="ms-movies">Music Shows</span> |
+                <span class="ms-movies">Kids</span> |
+                <span class="ms-movies">Spirituality</span> |
+                <span class="ms-movies">Screening</span> |
+                <span class="ms-movies">Exhibitions</span> |
+                <span class="ms-movies">Talks</span> |
+                <span class="ms-movies">Meetups</span> |
+                <span class="ms-movies">Online Streaming Events</span> |
+                <span class="ms-movies">Award Shows</span> |
+                <span class="ms-movies">Conference</span> |
+                <span class="ms-movies">Vaccination</span> |
+                <div>
+
+                    <span class="ms-movies">Celebrity Wishes</span> |
+                    <span class="ms-movies">Beer Festival</span>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">HELP</div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">About US</span> |
+                <span class="ms-movies">Contact Us</span> |
+                <span class="ms-movies">Current Opening</span> |
+                <span class="ms-movies">Press Release</span> |
+                <span class="ms-movies">Press Coverage</span> |
+                <span class="ms-movies">Sitemap</span> |
+                <span class="ms-movies">FAQs</span> |
+                <span class="ms-movies">Terms and Conditions</span> |
+                <span class="ms-movies">Privacy Policy</span>
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">CINEMICA EXCLUSIVES</div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">Superstar</span> |
+                <span class="ms-movies">BookASmile</span> |
+                <span class="ms-movies">Corporate Vouchers</span> |
+                <span class="ms-movies">Gift Cards</span> |
+                <span class="ms-movies">List My Show</span> |
+                <span class="ms-movies">Offers</span> |
+                <span class="ms-movies">Stream</span> |
+                <span class="ms-movies">Buzz</span> |
+                <span class="ms-movies">Trailers</span>
+            </div>
+        </div>
+        <div class="footerlogo">
+            <hr class="hr-line">
+            <div class="logo2">
+                <img src="images/logo1.png" alt="logo">
+                <Span class="logostring">CINEMICA</Span>
+            </div>
+            <hr class="hr-line">
+        </div>
+        <div class="Fr-mediaicons">
+            <img src="images/icons8-facebook-50.png" alt="facebook">
+            <img src="images/icons8-twitter-64.png" alt="facebook">
+            <img src="images/icons8-instagram-50.png" alt="facebook">
+            <img src="images/icons8-linkedin-60.png" alt="facebook">
+            <img src="images/icons8-pinterest-50.png" alt="facebook">
+            <img src="images/icons8-youtube-50.png" alt="facebook">
+        </div>
+        <div class="pagecopyright">
+            <div class="cp-line">Copyright 2022 @ Bigtree Entertainment Pvt. Ltd.All Rights Reserved</div>
+            <div class="cp-line">the content and images used on the site are copyright protected and copyrights vestes with the respective owner.The usage of the content and images on this website is intended to promise the works and no endordement of the artist
+            </div>
+            <div class="cp-line">shall be implied Unauthorized use is prohibited and punishable by law</div>
+
+        </div>
+
+    </footer>
+
+    <script src="./js/stream.js"></script>
+    <script src="https://kit.fontawesome.com/2db247bd01.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>

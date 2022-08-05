@@ -1,0 +1,971 @@
+@font-face {
+    font-family: logofont;
+    src: url(../font/Codystar-Regular.ttf);
+}
+
+@font-face {
+    font-family: PrimaryFontRoboto;
+    src: url(../font/Roboto-Light.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 6360px !important;
+}
+
+body {
+    height: 6360px !important;
+    width: 1366px !important;
+    overflow-x: hidden;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    background: linear-gradient(91deg, #000428, #004e92);
+}
+
+ ::-webkit-scrollbar {
+    width: 16px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #06062e;
+    /* border-radius: 16px; */
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: #ff0037;
+    border-radius: 16px;
+}
+
+
+/*navbar section------------------------------------------------------------->*/
+
+#navigationBar {
+    position: sticky;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    /* border-radius: 30px; */
+    /* border: 1px solid white; */
+    font-family: 'PrimaryFontRoboto', sans-serif !important;
+    font-size: 15px !important;
+    line-height: normal !important;
+    height: 70px;
+    width: 1366px;
+}
+
+.logo img {
+    width: 50px;
+    height: 45px;
+    margin: 0px 10px;
+    padding: 5px 0px;
+    position: relative;
+    top: 0px;
+    left: 17px;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo div {
+    text-align: center;
+    justify-content: center;
+    margin: 2px 0px 0px 0px;
+    padding: 5px 3px;
+    font-family: 'logofont', cursive !important;
+    color: rgb(245, 245, 239);
+    font-style: bold !important;
+    font-size: 34px!important;
+    position: relative;
+    left: 10px;
+}
+
+
+/* #navbar {
+    
+} */
+
+.Searchbox {
+    position: relative;
+    left: 46px;
+    align-items: center;
+    bottom: 0px;
+}
+
+.Searchbox input {
+    font-family: 'PrimaryFontRoboto', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    color: black;
+    border: 1px;
+    border-radius: 5px;
+    padding-inline: 20px;
+    width: 410px;
+    height: 31px;
+    outline: none;
+}
+
+.SignIn {
+    font-family: 'PrimaryFontRoboto', sans-serif !important;
+    color: white;
+    position: absolute;
+    right: 100px;
+    font-style: Bold !important;
+    font-size: 16px !important;
+    background-color: #ff0037;
+    justify-content: center;
+    top: 20px;
+    width: 80px;
+    height: 33px;
+    border-radius: 9px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.menuimage img {
+    position: absolute;
+    right: 40px;
+    top: 17px;
+    background-color: transparent;
+    width: 39px;
+}
+
+#navbar2 {
+    display: flex;
+    background-color: #06062e;
+    height: 35px;
+    width: 1366px;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 300 !important;
+    line-height: normal !important;
+}
+
+.opt1 ul {
+    display: flex;
+    color: white;
+}
+
+.opt1 ul li a {
+    Text-decoration: none;
+    color: white;
+    padding: 3px 18px;
+    margin: 2px;
+    font-family: 'PrimaryFontRoboto', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    line-height: 10px !important;
+    border: 1px solid #06062e;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.opt1 ul li :hover {
+    border-color: black !important;
+    background-color: #ff0037 !important;
+}
+
+.active-page {
+    border-color: black !important;
+    background-color: #ff0037 !important;
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.opt1 ul :hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.opt1 ul :active {
+    transform: scale(.90);
+    z-index: 2;
+}
+
+.opt1 ul li {
+    list-style: none;
+}
+
+.opt2 ul {
+    display: flex;
+    color: white;
+}
+
+.opt2 ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 3px 18px;
+    margin: 2px;
+    font-family: 'PrimaryFontRoboto', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    line-height: 10px !important;
+    border: 1px solid #06062e;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.opt2 ul li :hover {
+    border-color: black !important;
+    background-color: #ff0037 !important;
+}
+
+.opt2 ul :hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.opt2 ul :active {
+    transform: scale(.90);
+    z-index: 2;
+}
+
+.opt2 ul li {
+    list-style: none;
+}
+
+.opt2 {
+    position: absolute;
+    right: 50px;
+    top: 80px
+}
+
+.opt1 {
+    position: absolute;
+    left: 30px;
+    top: 80px;
+}
+
+.SignIn:hover {
+    color: #ff0037;
+    background-color: white;
+    border-color: #ff0037;
+}
+
+.SignIn:active {
+    transition: all 0s ease-in-out !important;
+    transform: scale(.90);
+    z-index: 2;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    border-bottom: 1.5px solid white;
+    width: 1366px;
+}
+
+.Seachicon {
+    width: 50px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: #ff0037;
+    color: white;
+    font-size: 18px;
+}
+
+.Seachicon:active {
+    transform: scale(0.98);
+    z-index: 2;
+}
+
+
+/* right slide menu bar -------------------------->*/
+
+#myslidermenu {
+    position: absolute;
+    right: -350px;
+    width: 350px;
+    height: 768px;
+    border-left: 1px solid black;
+    transition: smooth;
+    transition: .5s;
+    background: white !important;
+}
+
+.menuheader h2 {
+    color: white;
+    font-family: 'PrimaryFontRoboto', sans-serif;
+    background: rgb(4, 4, 59);
+    padding: 14px;
+    font-size: 20px !important;
+}
+
+#myslidermenu ul li {
+    list-style-type: none;
+    padding: 15px;
+    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(241, 241, 241);
+    font-family: 'PrimaryFontRoboto', sans-serif;
+    font-size: 18px;
+    display: flex;
+}
+
+#myslidermenu ul li i {
+    margin-right: 10px;
+    font-size: 20px
+}
+
+#myslidermenu ul li p {
+    position: absolute;
+    left: 60px;
+}
+
+#myslidermenu ul li:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+.arrow {
+    position: absolute;
+    right: 0;
+    color: #ff0037
+}
+
+.menuheader h2 i {
+    position: absolute !important;
+    right: 8px !important;
+}
+
+#unlock {
+    display: flex;
+    /* margin-top: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'PrimaryFontRoboto', sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 6px #e28b9e;
+}
+
+#unlock img {
+    width: 40px;
+    height: 40px;
+}
+
+#unlock p {
+    width: 150px;
+    position: relative;
+    left: 10px;
+    top: auto;
+}
+
+.btn2signin {
+    margin-left: 30px;
+    padding: 10px;
+    border: 1px solid #ff0037;
+    border-radius: 9px;
+    color: #ff0037;
+    border-color: #ff0037;
+    background-color: white;
+    font-family: 'PrimaryFontRoboto', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.btn2signin:hover {
+    color: white;
+    background-color: #ff0037;
+    border-color: white;
+}
+
+.btn2signin:active {
+    transition: all 0s ease-in-out !important;
+    transform: scale(.98);
+    z-index: 2;
+}
+
+#myslidermenu ul {
+    padding-left: 0rem !important;
+}
+
+
+/* right slide menu bar --------------------------> ends*/
+
+
+/* magicion image----------------------------------> Starts*/
+
+#magicion {
+    position: relative;
+    width: 1350px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 105px;
+}
+
+.magicimage {
+    width: 1100px;
+    height: 277px;
+    background-image: url(../images/magician.avif);
+}
+
+
+/* magicion image----------------------------------> Ends*/
+
+
+/* parent container1 *----------------------------->starts*/
+
+#parentcontainer1 {
+    width: 1350px;
+    height: 5000px;
+    position: relative;
+    top: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#parentcontainer1 .filter {
+    width: 275px;
+    height: 900px;
+    /* border: 2px solid green; */
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#parentcontainer1 .filter .parentscrollbutton {
+    position: absolute;
+    top: 72px;
+}
+
+#parentcontainer1 .filter .scrolldownbutton {
+    width: 275px;
+    height: 50px;
+    background: linear-gradient(to right, #dc2424, #4a569d);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.actualbuttons {
+    position: relative;
+    top: 0px;
+    margin-left: 10px;
+}
+
+.filterbuttons {
+    font-family: 'PrimaryFontRoboto';
+    color: black;
+    padding: 5px 10px 5px 10px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    /* background: #ff0037; */
+    margin-right: 10px;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.searchbyvenue {
+    font-family: 'PrimaryFontRoboto';
+    color: white;
+    padding: 5px 10px 5px 10px;
+    font-size: 16px;
+    font-weight: 900;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    width: 275px;
+    height: 40px;
+    letter-spacing: 0.8mm;
+}
+
+.searchbyvenue:active {
+    transform: scale(0.98);
+    z-index: 2;
+}
+
+.filterbuttons:active {
+    transform: scale(0.98);
+    z-index: 2;
+}
+
+.displayelements {
+    display: flex;
+    height: 50px;
+    position: relative;
+    top: 18px;
+    margin-left: 10px;
+}
+
+.displayelements h3 {
+    position: relative;
+    bottom: 4px;
+    margin-left: 10px;
+    font-family: 'PrimaryFontRoboto' !important;
+    color: white;
+    font-size: 18px !important;
+}
+
+.displayelements i {
+    color: white;
+}
+
+#parentcontainer1 .filter h2 {
+    font-family: "PrimaryFontRoboto";
+    font-size: 25px;
+    font-weight: 900;
+    color: #eae4e6;
+    letter-spacing: 1mm;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 19px;
+}
+
+#parentcontainer1 .allevents {
+    width: 925px;
+    height: 5000px;
+    margin-left: 10px;
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    left: 330px;
+    /* border: 2px solid green;*/
+}
+
+.eventsandbuttons {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.eventsandbuttons h2 {
+    font-family: "PrimaryFontRoboto";
+    font-size: 25px;
+    font-weight: 900;
+    color: #eae4e6;
+    letter-spacing: 1mm;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.eventsandbuttons .suggestbutton {
+    margin-left: 10px;
+}
+
+.suggestbutton .suggbtn {
+    font-family: "PrimaryFontRoboto";
+    padding: 9px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    color: #ff0037;
+    background: white;
+    border: 1px solid white;
+    font-weight: 700;
+}
+
+.suggestbutton .suggbtn:active {
+    transform: scale(0.98);
+    z-index: 2;
+}
+
+.alleventcards {
+    width: 925px;
+    height: 350px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+    display: flex;
+}
+
+.botevent {
+    margin-top: 100px;
+}
+
+.botevent1 {
+    margin-top: 120px;
+}
+
+.alleventcards .card {
+    height: 400px;
+    width: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background: none;
+    border: none;
+}
+
+.alleventcards .card:active {
+    transform: scale(0.98);
+    z-index: 2;
+}
+
+.alleventcards .card img {
+    height: 320px;
+    width: 200px;
+    object-fit: fill;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.alleventcards .card h3 {
+    font-family: 'PrimaryFontRoboto';
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.alleventcards .card h4 {
+    font-family: 'PrimaryFontRoboto';
+    color: white;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 6px;
+    text-align: center;
+}
+
+.alleventcards .card p {
+    font-family: 'PrimaryFontRoboto';
+    color: white;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 6px;
+    text-align: center;
+}
+
+input[type="date"] {
+    /* background-color: #ff0037; */
+    padding: 5px;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 25px;
+    left: 76px;
+    font-family: "PrimaryFontRoboto", monospace;
+    color: black;
+    font-size: 16px;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+::-webkit-calendar-picker-indicator {
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+/* parent container1 *----------------------------->ends*/
+
+
+/* footerdesign starts-----------------------------------------------------------> */
+
+.cinemafooter {
+    width: 1366px;
+    height: 1130px;
+    background-color: rgb(51, 51, 56);
+    position: absolute;
+    bottom: 0;
+}
+
+.listyourshow {
+    width: 1366px;
+    height: 80px;
+    display: flex;
+    color: white;
+}
+
+.contactus {
+    font-family: 'PrimaryFontRoboto', sans-serif !important;
+    color: white;
+    position: relative;
+    left: 340px;
+    top: 19px;
+    font-style: Bold !important;
+    font-size: 16px !important;
+    background-color: rgb(236, 94, 113);
+    justify-content: center;
+    width: 160px;
+    height: 40px;
+    border-radius: 9px;
+    /* transition: all 0.5s ease-in-out; */
+    border: 0px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.listyourString {
+    font-family: 'PrimaryFontRoboto';
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    left: 190px;
+    top: 30px;
+}
+
+.listyourshow img {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 20px;
+    left: 154px;
+}
+
+.fsString1 {
+    font-family: 'PrimaryFontRoboto';
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    left: 165px;
+    top: 29px;
+}
+
+.contactus::before {
+    content: "" !important;
+    position: absolute !important;
+    background: #eae4e6 !important;
+    width: 8px !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: -32px !important;
+    transform: rotate(-16deg) !important;
+    filter: blur(6px) !important;
+}
+
+.contactus:hover::before {
+    left: calc(100% + 32px) !important;
+    transition: 0.95s !important;
+}
+
+.contactus:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #ff0037;
+}
+
+.contactus:active {
+    transform: scale(0.98);
+    z-index: 2;
+}
+
+
+/* customer support */
+
+.customersupport {
+    width: 1366px;
+    height: 110px;
+    background-color: rgb(64, 64, 67);
+}
+
+.cs-support {
+    display: flex;
+}
+
+.customersupport .support img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.customersupport .support .img1 {
+    position: relative;
+    left: 33px;
+}
+
+.customersupport .support .img2 {
+    position: relative;
+    left: 70px;
+}
+
+.customersupport .support .img3 {
+    position: relative;
+    left: 65px;
+}
+
+.customersupport .support {
+    margin-left: 150px;
+    margin-top: 12px;
+    position: relative;
+    left: 130px;
+    font-family: 'PrimaryFontRoboto' !important;
+    font-size: 12px !important;
+    font-weight: 900 !important;
+    color: #858889 !important;
+}
+
+.customersupport .support:hover {
+    color: white !important;
+}
+
+
+/* Movies shown in mumbai */
+
+.mumbaishow {
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    color: #858889 !important;
+}
+
+.mumbaishow .ms-string1 {
+    font-family: 'PrimaryFontRoboto' !important;
+    font-size: 12px !important;
+    font-weight: 900 !important;
+}
+
+.mumbaishow .ms-movies {
+    font-family: 'PrimaryFontRoboto' !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    cursor: pointer;
+}
+
+.mumbaishow .ms-movies:hover {
+    color: white;
+}
+
+.ms-allmovies {
+    margin-top: 5px;
+}
+
+
+/* Footer logo */
+
+.footerlogo {
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerlogo .logo2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerlogo .logo2 img {
+    width: 55px;
+    height: 55px;
+    margin-left: 5px;
+}
+
+.footerlogo .logo2 .logostring {
+    margin-left: 5px;
+    font-family: 'logofont';
+    color: white;
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.hr-line2 {
+    width: 500px;
+    color: white;
+    height: 0.99px !important;
+    font-weight: 100 !important;
+}
+
+.Fr-mediaicons {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Fr-mediaicons img {
+    width: 37px;
+    height: 37px;
+    object-fit: cover;
+    margin-right: 20px;
+    position: relative;
+    left: 17px;
+}
+
+.Fr-mediaicons img:hover {
+    filter: invert(100%);
+}
+
+.Fr-mediaicons img:active {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+
+/* copyright */
+
+.pagecopyright {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 30px;
+}
+
+.pagecopyright .cp-line {
+    font-family: 'PrimaryFontRoboto' !important;
+    font-size: 12px !important;
+    font-weight: 900 !important;
+    color: #858889 !important;
+}
+
+
+/* footerdesign ends-----------------------------------------------------------> */
+
+.infospace {
+    width: 1366px;
+    height: 525px;
+    border: 2px solid black;
+    position: relative;
+    bottom: 130px;
+}
+
+.pageinfostrip {
+    width: 1366px;
+    height: 40px;
+    border: 1px solid green;
+    position: relative;
+    bottom: 130px;
+    background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+}
+
+.pageinfostrip h4 {
+    color: #ffffff;
+    font-family: 'PrimaryFontRoboto';
+    margin-left: 100px;
+    margin-top: 10px;
+    letter-spacing: 0.3mm;
+    font-weight: 100;
+}

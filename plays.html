@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="./css/plays.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <img src="./images/logo1.png" alt="brandlogo">
+                <div>CINEMICA</div>
+            </div>
+
+            <div class="Searchbox">
+                <input type="text" placeholder="Search for Movies,Events,Plays,Sports,Activities" minlength="1" required>
+                <button type="submit" class="Seachicon"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div>
+                <button class="menuimage" onclick="showhidemenu()"><img src="./images/menu1.png" alt="menu" ></button>
+            </div>
+
+
+        </nav>
+
+        <nav id="navbar2">
+            <div class="opt1">
+                <ul>
+                    <li class="list"><a href="HomePage.html">Home</a></li>
+                    <li class="list"><a href="Movies.html">Movies</a></li>
+                    <li class="list"><a href="stream.html">Stream  </a></li>
+                    <li class="list"><a href="events.html">Events</a></li>
+                    <li class="list"><a href="#" class="active-page">Plays</a></li>
+                    <li class="list"><a href="sports.html">Sports</a></li>
+                    <li class="list"><a href="activites.html">Activities</a></li>
+
+                </ul>
+
+            </div>
+            <div class="opt2">
+                <ul>
+                    <li class="list"><a href="ListYourShow.html">ListYourShows</a></li>
+                    <li class="list"><a href="Corporates.html">Corporates</a></li>
+                    <li class="list"><a href="offers.html">Offers</a></li>
+                    <li class="list"><a href="#">Gift Cards</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <div id="myslidermenu">
+
+            <div class="menuheader">
+                <H2>Hey!<i class="fa-solid fa-circle-xmark" onclick="showhidemenu()"></i></H2>
+
+            </div>
+            <div id="unlock">
+                <img src="./images/rewards_login.avif" alt="img">
+                <p>Unlock Special Offers & great benefits</p>
+
+                <button class="btn2signin">Login/Register</button>
+            </div>
+
+            <ul>
+                <li><i class="fa-solid fa-bell"></i>
+                    <p>Notifications</p>
+                    <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+
+                </li>
+                <li><i class="fa-regular fa-comment-dots"></i>
+                    <p>Help & Support</p>
+                    <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                </li>
+                <li><i class="fa-solid fa-award"></i>
+                    <p>Rewards</p>
+                    <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+                </li>
+                <li><i class="fa-solid fa-hand-holding-heart"></i>
+                    <p>BookASmile</p>
+                    <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="parentcontainer1">
+
+        <div class="filter">
+            <h2>Filters</h2>
+            <div class="parentscrollbutton">
+                <div class="scrolldownbutton" id="scrolldownbutton">
+                    <div class="displayelements" onclick="showHideDate()" id="displayelements">
+                        <i class="fa-solid fa-angle-down" id="arrowpoint"></i>
+                        <h3>Date</h3>
+                    </div>
+                    <div class="actualbuttons">
+                        <button class="filterbuttons">Today</button>
+                        <button class="filterbuttons">Tomorrow</button>
+                        <button class="filterbuttons">This Weekend</button>
+                        <input type="date">
+                    </div>
+                </div>
+                <div class="scrolldownbutton" id="scrolldownbutton1">
+                    <div class="displayelements" onclick="showHidelanguage()" id="displayelements">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <h3>Language</h3>
+                    </div>
+                    <div class="actualbuttons">
+                        <button class="filterbuttons">English</button>
+                        <button class="filterbuttons">Hindi</button>
+                        <button class="filterbuttons">Marathi</button>
+                        <button class="filterbuttons">Gujarati</button>
+                        <button class="filterbuttons">Telugu</button>
+                    </div>
+                </div>
+                <div class="scrolldownbutton" id="scrolldownbutton2">
+                    <div class="displayelements" onclick="showHideCategories()" id="displayelements">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <h3>Categories</h3>
+                    </div>
+                    <div class="actualbuttons">
+                        <button class="filterbuttons">Comedy Shows</button>
+                        <button class="filterbuttons">Workshops</button>
+                        <button class="filterbuttons">Online Streaming Events</button>
+                        <button class="filterbuttons">Music Shows</button>
+                        <button class="filterbuttons">Kids</button>
+                        <button class="filterbuttons">Performances</button>
+                        <button class="filterbuttons">Screening</button>
+                        <button class="filterbuttons">Spirituality</button>
+                        <button class="filterbuttons">Exhibitions</button>
+                        <button class="filterbuttons">Meetups</button>
+                        <button class="filterbuttons">Talks</button>
+                        <button class="filterbuttons">Award Shows</button>
+                        <button class="filterbuttons">Celebrity Wishes</button>
+
+                    </div>
+                </div>
+                <div class="scrolldownbutton" id="scrolldownbutton3">
+                    <div class="displayelements" onclick="showHideMoreFilters()" id="displayelements">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <h3>More Filters</h3>
+                    </div>
+                    <div class="actualbuttons">
+                        <button class="filterbuttons">Outdoor Events</button>
+                        <button class="filterbuttons">Amateur</button>
+                        <button class="filterbuttons">Online Streaming</button>
+                        <button class="filterbuttons">Kids Allowed</button>
+
+                        <button class="filterbuttons">Kids Activities</button>
+                        <button class="filterbuttons">Religious</button>
+                        <button class="filterbuttons">Spiritual</button>
+                    </div>
+                </div>
+                <div class="scrolldownbutton" id="scrolldownbutton4">
+                    <div class="displayelements" onclick="showHidePrice()" id="displayelements">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <h3>Price</h3>
+                    </div>
+                    <div class="actualbuttons">
+                        <button class="filterbuttons">Free</button>
+                        <button class="filterbuttons">0-500</button>
+                        <button class="filterbuttons">5001-2000</button>
+                        <button class="filterbuttons">Above 2000</button>
+
+                    </div>
+                </div>
+                <button class="searchbyvenue">Browse by Venue</button>
+            </div>
+
+        </div>
+        <div class="allevents">
+            <div class="eventsandbuttons">
+                <h2>PLAYS</h2>
+            </div>
+            <div class="alleventcards">
+                <div class="card">
+                    <img src="./images/disco.jpg" alt="amitmusic">
+                    <h3>DISCO</h3>
+                    <h4>St. Andrews Auditorium...</h4>
+                    <p>English</p>
+                    <p>₹ 350 Onwards</p>
+
+                </div>
+                <div class="card">
+                    <img src="./images/somethink.jpg" alt="amitmusic">
+                    <h3>There's Something In</h3>
+                    <h4>Jamshed Baba Theater</h4>
+                    <p>Music Show</p>
+                    <p>₹ 800 Onwards</p>
+
+                </div>
+                <div class="card">
+                    <img src="./images/maratha.jpg" alt="amitmusic">
+                    <h3>Marathi Bana</h3>
+                    <h4>Ram ganesh Gakkari...</h4>
+                    <p>Marathi</p>
+                    <p>₹ 200 Onwards</p>
+
+
+                </div>
+                <div class="card">
+                    <img src="./images/start.jpg" alt="amitmusic">
+                    <h3>Sarkha Kahitari Hotay</h3>
+                    <h4>Prabodhankar Thackeray...</h4>
+                    <p>Marathi</p>
+                    <p>₹ 100 Onwards</p>
+
+
+                </div>
+            </div>
+            <div class="botevent">
+                <div class="alleventcards">
+                    <div class="card">
+                        <img src="./images/behen.jpg" alt="amitmusic">
+                        <h3>Akvarious Productions Presents: Dekh Behen</h3>
+                        <h4>Prithvi Theatre</h4>
+                        <p>English,Hindi</p>
+                        <p>₹ 500 Onwards</p>
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/bhart.jpg" alt="amitmusic">
+                        <h3>Punha Sahi Re Sahi</h3>
+                        <h4>Dinanath Mangeshkar...</h4>
+                        <p>Marathi</p>
+                        <p>₹ 300 Onwards</p>
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/dada.jpg" alt="amitmusic">
+                        <h3>Dada Ek Good News Aahe</h3>
+                        <h4>Kashinath Ghanekar...</h4>
+                        <p>Marathi</p>
+                        <p>₹ 200 Onwards</p>
+
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/us.jpg" alt="amitmusic">
+                        <h3>This is U.S (p)</h3>
+                        <h4>Prithvi house: Juhu</h4>
+                        <p>English Hindi</p>
+                        <p>₹ 100 Onwards</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="botevent1">
+                <div class="alleventcards">
+                    <div class="card">
+                        <img src="./images/maa.jpg" alt="amitmusic">
+                        <h3>Vacuum Cleaner</h3>
+                        <h4>Prabodhankar Thackeray</h4>
+                        <p>Marathi</p>
+                        <p>₹ 250 Onwards</p>
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/master.jpg" alt="amitmusic">
+                        <h3>Bliffmaster Gujjubhai</h3>
+                        <h4>Nehru centre:Mumbai</h4>
+                        <p>Gujarati</p>
+                        <p>₹ 200 Onwards</p>
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/sanget.jpg" alt="amitmusic">
+                        <h3>Sangeeet Devbabhali</h3>
+                        <h4>Prabodhankar Thackeray...</h4>
+                        <p>Marathi</p>
+                        <p>₹ 300 Onwards</p>
+
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/zee - Copy.jpg" alt="amitmusic">
+                        <h3>Albattya Galbattya</h3>
+                        <h4>Dinanath Mangeshkar...</h4>
+                        <p>marathi</p>
+                        <p>₹ 200 Onwards</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="botevent1">
+                <div class="alleventcards">
+                    <div class="card">
+                        <img src="./images/snow.jpg" alt="amitmusic">
+                        <h3>Snow White And The 7 Dwarf-A Broadway</h3>
+                        <h4>royal opera House Theatr...</h4>
+                        <p>English</p>
+                        <p>₹ 400 Onwards</p>
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/ghosti.jpg" alt="amitmusic">
+                        <h3>Eka Lagnachi Pudhchi Gosht</h3>
+                        <h4>Shree Shivaji Mandir. Dadar</h4>
+                        <p>Marathi</p>
+                        <p>₹ 200 Onwards</p>
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/aamne.jpg" alt="amitmusic">
+                        <h3>Aamne Saamne- Marathi Play</h3>
+                        <h4>Savitribai phule natyagruh...</h4>
+                        <p>Marathi</p>
+                        <p>₹ 300 Onwards</p>
+
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/bawa.jpg" alt="amitmusic">
+                        <h3>I'M Bawa and I Know It!</h3>
+                        <h4>tata threatre: NCPA</h4>
+                        <p>Gujarati</p>
+                        <p>₹ 500 Onwards</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="botevent1">
+                <div class="alleventcards">
+                    <div class="card">
+                        <img src="./images/karl.jpg" alt="amitmusic">
+                        <h3>Ideas Unlimited KARL MARX IN KALBADEVI</h3>
+                        <h4>Prithvi Theatre</h4>
+                        <p>English,Hindi</p>
+                        <p>₹ 180 Onwards</p>
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/love.jpg" alt="amitmusic">
+                        <h3>Food Stories- A Supper Theatre play</h3>
+                        <h4>Nifty five east,grand hyatt</h4>
+                        <p>English,hindi</p>
+                        <p>₹ 299 Onwards</p>
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/haus.jpg" alt="amitmusic">
+                        <h3>Hasu Mazi Purva</h3>
+                        <h4>Vishnudas Bhave...</h4>
+                        <p>Marathi</p>
+                        <p>₹ 100 Onwards</p>
+
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/prithvi.jpg" alt="amitmusic">
+                        <h3>D for Dreama's PATNA KA SUPERHERO (P)</h3>
+                        <h4>prithvi Theatre</h4>
+                        <p>Hindi</p>
+                        <p>₹ 3500 Onwards</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="botevent1">
+                <div class="alleventcards">
+                    <div class="card">
+                        <img src="./images/honeymoon.jpg" alt="amitmusic">
+                        <h3>Punaschya Honeymoon</h3>
+                        <h4>Achary pralhad keshav... </h4>
+                        <p>Marathi</p>
+                        <p>₹ 200 Onwards</p>
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/kurrr.jpg" alt="amitmusic">
+                        <h3>KuRRR</h3>
+                        <h4>Shri Shivaji mandir, Dadar</h4>
+                        <p>Marathi</p>
+                        <p>₹ 700 Onwards</p>
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/gammat.jpg" alt="amitmusic">
+                        <h3>Hich Tar Family Chi gammat Aahe</h3>
+                        <h4>Ram Ganesh Gadkari...</h4>
+                        <p>Marathi</p>
+                        <p>₹ 200 Onwards</p>
+
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/abba.jpg" alt="amitmusic">
+                        <h3>Abba- tribute show </h3>
+                        <h4>Royal opera house theatr...</h4>
+                        <p>English</p>
+                        <p>₹ 400 Onwards</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="botevent1">
+                <div class="alleventcards">
+                    <div class="card">
+                        <img src="./images/jugnu.jpg" alt="amitmusic">
+                        <h3>Mandali talkies MAHANAGAR KE JUGNU</h3>
+                        <h4>Prithvi Theatre</h4>
+                        <p>English,Hindi</p>
+                        <p>₹ 500 Onwards</p>
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/kaptan.jpg" alt="amitmusic">
+                        <h3>Boski Ke kaptan Chacha </h3>
+                        <h4>Experimental Theatre</h4>
+                        <p>Hindi</p>
+                        <p>₹ 350 Onwards</p>
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/tila.jpg" alt="amitmusic">
+                        <h3>Tila Kahi Sangaichai</h3>
+                        <h4>Ram Ganesh Gadkari...</h4>
+                        <p>Marathi</p>
+                        <p>₹ 300 Onwards</p>
+
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/ace.jpg" alt="amitmusic">
+                        <h3>ACe Productions-Broken images</h3>
+                        <h4>Sophia Auditorium: Mumbai</h4>
+                        <p>English</p>
+                        <p>₹ 750 Onwards</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="botevent1">
+                <div class="alleventcards">
+                    <div class="card">
+                        <img src="./images/manto.jpg" alt="amitmusic">
+                        <h3>Manto Ke Aadmi</h3>
+                        <h4>Veda factory: mumbai</h4>
+                        <p>Hindi</p>
+                        <p>₹ 190 Onwards</p>
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/raja.jpg" alt="amitmusic">
+                        <h3>Rangshila's THE GREAT RAJA MASTER DREAM...</h3>
+                        <h4>Prithvi Theatre</h4>
+                        <p>hindi</p>
+                        <p>₹ 180 Onwards</p>
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/cock.jpg" alt="amitmusic">
+                        <h3>Cock-By Mike Bartlett</h3>
+                        <h4>Harkat studios Mumbai</h4>
+                        <p>English</p>
+                        <p>₹ 350 Onwards</p>
+
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/mumbai.jpg" alt="amitmusic">
+                        <h3>Sthalantari- Mumbai premiere of the Play</h3>
+                        <h4>Dance Theatre godrej...</h4>
+                        <p>Marathi</p>
+                        <p>₹ 350 Onwards</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="botevent1">
+                <div class="alleventcards">
+                    <div class="card">
+                        <img src="./images/sorry.jpg" alt="amitmusic">
+                        <h3>Sorry!!! Not Sorry-A Sketch Comedy</h3>
+                        <h4>Le chakallas studios...</h4>
+                        <p>English,Hindi</p>
+                        <p>₹ 299 Onwards</p>
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/vasu.jpg" alt="amitmusic">
+                        <h3>Vasu chi Sasu </h3>
+                        <h4>Mahakavi kalidas...</h4>
+                        <p>marathi</p>
+                        <p>₹ 200 Onwards</p>
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/dark.jpg" alt="amitmusic">
+                        <h3>Dark Senses-(An experience Like Never...</h3>
+                        <h4>Dorangos Hall 1: Bandra</h4>
+                        <p>English,Hindi</p>
+                        <p>₹ 99 Onwards</p>
+
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/ram.jpg" alt="amitmusic">
+                        <h3>Ansh Theatre Group's</h3>
+                        <h4>Prithvi Theatre</h4>
+                        <p>Hindi</p>
+                        <p>₹ 99 Onwards</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="botevent1">
+                <div class="alleventcards">
+                    <div class="card">
+                        <img src="./images/pappa.jpg" alt="amitmusic">
+                        <h3>Pappa Mara Pushparaj- Gujarati Drama</h3>
+                        <h4>Prabodhankar Thackeray</h4>
+                        <p>Gujarati</p>
+                        <p>₹ 150 Onwards</p>
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/room.jpg" alt="amitmusic">
+                        <h3>Ek Room Rasodu</h3>
+                        <h4>Aspee Auditorium-Malad</h4>
+                        <p>Gujarati</p>
+                        <p>₹ 200 Onwards</p>
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/kaptan.jpg" alt="amitmusic">
+                        <h3>Boski Ke Kaptan Chacha</h3>
+                        <h4>Experimental Theatre...</h4>
+                        <p>Hindi</p>
+                        <p>₹ 350 Onwards</p>
+
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/khel.jpg" alt="amitmusic">
+                        <h3>Khel Khele Khelaiya</h3>
+                        <h4>Dinanath Mangeshkar...</h4>
+                        <p>Gujarati</p>
+                        <p>₹ 150 Onwards</p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="pageinfostrip">
+        <h4></h4>
+    </div>
+
+    <footer class="cinemafooter">
+        <div class="listyourshow">
+            <img src="./images/hut.svg" alt="hut">
+            <div class="fsString1">List your Show</div>
+            <div class="listyourString">Got a show,event,activity or a great experience? Partner with us and get listed on Cinemica</div>
+            <button class="contactus">Contact today!</button>
+        </div>
+        <div class="customersupport">
+            <div class="cs-support">
+                <div class="support">
+                    <img src="./images/help-desk.png" alt="img" class="img1">
+                    <div class="support-String">24/7 CUSTOMER CARE</div>
+                </div>
+                <div class="support">
+                    <img src="./images/movie-ticket.png" alt="img" class="img2">
+                    <div class="support-String">RESEND BOOKING CONFIRMATIONS</div>
+                </div>
+                <div class="support">
+                    <img src="./images/newsletter.png" alt="img" class="img3">
+                    <div class="support-String">SUBSCRIBE TO THE NEWSLETTER</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">MOVIES NOW SHOWING</div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">Shamshera</span> |
+                <span class="ms-movies">Thor :Love and Thunder</span> |
+                <span class="ms-movies">Hit :The First Case</span> |
+                <span class="ms-movies">Rocketry</span> |
+                <span class="ms-movies">Shabassh Mithu</span> |
+                <span class="ms-movies">JugJugg Jeeyo</span> |
+                <span class="ms-movies">Minions The Rise of Gru</span> |
+                <span class="ms-movies">Judaa Hoke Bhi</span> |
+                <span class="ms-movies">Tamasha</span> |
+                <span class="ms-movies">Rashra Kavach :OM</span>
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">UPCOMING MOVIES </div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">Maaraya</span> |
+                <span class="ms-movies">Jatts Land</span> |
+                <span class="ms-movies">Rk/RKAY</span> |
+                <span class="ms-movies">Ward 126</span> |
+                <span class="ms-movies">Malayankunju</span> |
+                <span class="ms-movies">Meelo Okadu</span> |
+                <span class="ms-movies">Sri Ranga</span> |
+                <span class="ms-movies">Droupodi The Horror Night</span> |
+                <span class="ms-movies">Hi Five : Fun and Gun</span> |
+                <span class="ms-movies">Sahobashe</span> |
+                <span class="ms-movies">Nadhi</span> |
+                <span class="ms-movies">Kuri</span> |
+                <span class="ms-movies">Paws of Fury :THe Legend of Hank</span>
+                <div>
+                    <span class="ms-movies">Mister Manju</span> |
+                    <span class="ms-movies">Jagannatakam (2022)</span> |
+                    <span class="ms-movies">Darja</span> |
+                    <span class="ms-movies">Maha</span> |
+                    <span class="ms-movies">Padma Sri Kaur Singh</span> |
+                    <span class="ms-movies">Thank you</span>
+                </div>
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">MOVIES BY GENRE</div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">Drama Movies</span> |
+                <span class="ms-movies">Action Movies</span> |
+                <span class="ms-movies">Comedy Movies</span> |
+                <span class="ms-movies">Thriller Movies</span> |
+                <span class="ms-movies">Adventure Movies</span> |
+                <span class="ms-movies">Romantic Movies</span> |
+                <span class="ms-movies">Biography Movies</span> |
+                <span class="ms-movies">Fantasy Movies</span> |
+                <span class="ms-movies">Animation Movies</span> |
+                <span class="ms-movies">Musical Movies</span> |
+                <span class="ms-movies">Sci-Fi Movies</span> |
+
+
+                <div>
+                    <span class="ms-movies">Period Movies</span> |
+                    <span class="ms-movies">Supernatural Movies</span> |
+                    <span class="ms-movies">Tragedy Movies</span> |
+                    <span class="ms-movies">Adaption Movies</span> |
+                    <span class="ms-movies">Devotional Movies</span> |
+                    <span class="ms-movies">Mystery Movies</span> |
+                    <span class="ms-movies">Historical Movies</span> |
+                    <span class="ms-movies">Sports Movies</span> |
+                    <span class="ms-movies">Classic Movies</span> |
+                    <span class="ms-movies">Adult Movies</span> |
+                    <span class="ms-movies">Crime Movies</span> |
+
+
+
+                </div>
+                <div>
+                    <span class="ms-movies">Political Movies</span> |
+                    <span class="ms-movies">Screening Movies</span> |
+                    <span class="ms-movies">Suspense Movies</span> |
+                    <span class="ms-movies">Horror Movies</span> |
+                    <span class="ms-movies">War Movies</span> |
+                    <span class="ms-movies">Heist Movies</span> |
+                    <span class="ms-movies">Mythological Movies</span> |
+                    <span class="ms-movies">Noir Movies</span> |
+                    <span class="ms-movies">Anime Movies</span> |
+                    <span class="ms-movies">Psycological Movies</span> |
+                    <span class="ms-movies">Bollywood Movies</span>
+                </div>
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">MOVIES BY LANGUAGE</div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">Movies in Hindi</span> |
+                <span class="ms-movies">Movies in English</span> |
+                <span class="ms-movies">Movies in Marathi</span> |
+                <span class="ms-movies">Movies in Gujrati</span> |
+                <span class="ms-movies">Movies in Tamil</span> |
+                <span class="ms-movies">Movies in Telugu</span> |
+                <span class="ms-movies">Movies in Malayalam</span> |
+                <span class="ms-movies">Movies in Nepali</span> |
+                <span class="ms-movies">Movies in Tulu</span> |
+                <span class="ms-movies">Movies in Japanese</span> |
+
+
+
+                <div>
+                    <span class="ms-movies">Movies in Portuguese</span> |
+                    <span class="ms-movies">Movies in Chattisgarhi</span> |
+                    <span class="ms-movies">Movies in Konkani</span> |
+                    <span class="ms-movies">Movies in Rajasthani</span> |
+                    <span class="ms-movies">Movies in Khasi</span> |
+                    <span class="ms-movies">Movies in Assamese</span> |
+                    <span class="ms-movies">Movies in French</span> |
+                    <span class="ms-movies">Movies in Kannada</span> |
+                    <span class="ms-movies">Movies in bhojpuri</span> |
+                    <span class="ms-movies">Movies in Haryanvi</span> |
+
+                </div>
+                <div>
+                    <span class="ms-movies">Movies in English 7D</span> |
+                    <span class="ms-movies">Movies in Punjabi</span> |
+                    <span class="ms-movies">Movies in Oriya</span>
+                    <span class="ms-movies">Movies in Sindhi</span> |
+                    <span class="ms-movies">Movies in Bengali</span> |
+                </div>
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">PLAYS BY GENRE </div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">Drama Plays</span> |
+                <span class="ms-movies">Comedy Plays</span> |
+                <span class="ms-movies">Fantasy Plays</span> |
+                <span class="ms-movies">Thriller Plays</span> |
+                <span class="ms-movies">Musical Plays</span> |
+                <span class="ms-movies">Broadway Plays</span> |
+                <span class="ms-movies">Sci-Fi Plays</span> |
+                <span class="ms-movies">Period Plays</span> |
+                <span class="ms-movies">Tragedy Plays</span> |
+                <span class="ms-movies">ActionPlays</span> |
+                <span class="ms-movies">Adaption Plays</span> |
+                <span class="ms-movies">Mystery Plays</span> |
+
+                <div>
+
+                    <span class="ms-movies">Historical Plays</span> |
+                    <span class="ms-movies">Online Streaming Plays</span> |
+                    <span class="ms-movies">Classic Plays</span> |
+                    <span class="ms-movies">Adult Plays</span> |
+                    <span class="ms-movies">Contemporary Plays</span> |
+                    <span class="ms-movies">Tribute Plays</span> |
+                    <span class="ms-movies">Political Plays</span> |
+                    <span class="ms-movies">Suspense Plays</span> |
+                    <span class="ms-movies">Romantic Plays</span> |
+                    <span class="ms-movies">Biography Plays</span> |
+                    <span class="ms-movies">Horror Plays</span> |
+                </div>
+                <div>
+
+                    <span class="ms-movies">War Plays</span> |
+                    <span class="ms-movies">Adventure Plays</span> |
+                    <span class="ms-movies">Mythological Plays</span> |
+                    <span class="ms-movies">Noir Plays</span> |
+                    <span class="ms-movies">Psychological Plays</span> |
+                    <span class="ms-movies">Regional Plays</span>
+                </div>
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">EVENTS </div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">Comedy Shows</span> |
+                <span class="ms-movies">Workshops</span> |
+                <span class="ms-movies">Music Shows</span> |
+                <span class="ms-movies">Kids</span> |
+                <span class="ms-movies">Spirituality</span> |
+                <span class="ms-movies">Screening</span> |
+                <span class="ms-movies">Exhibitions</span> |
+                <span class="ms-movies">Talks</span> |
+                <span class="ms-movies">Meetups</span> |
+                <span class="ms-movies">Online Streaming Events</span> |
+                <span class="ms-movies">Award Shows</span> |
+                <span class="ms-movies">Conference</span> |
+                <span class="ms-movies">Vaccination</span> |
+                <div>
+
+                    <span class="ms-movies">Celebrity Wishes</span> |
+                    <span class="ms-movies">Beer Festival</span>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">HELP</div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">About US</span> |
+                <span class="ms-movies">Contact Us</span> |
+                <span class="ms-movies">Current Opening</span> |
+                <span class="ms-movies">Press Release</span> |
+                <span class="ms-movies">Press Coverage</span> |
+                <span class="ms-movies">Sitemap</span> |
+                <span class="ms-movies">FAQs</span> |
+                <span class="ms-movies">Terms and Conditions</span> |
+                <span class="ms-movies">Privacy Policy</span>
+            </div>
+        </div>
+        <div class="mumbaishow">
+            <div class="ms-string1">CINEMICA EXCLUSIVES</div>
+            <div class="ms-allmovies">
+                <span class="ms-movies">Superstar</span> |
+                <span class="ms-movies">BookASmile</span> |
+                <span class="ms-movies">Corporate Vouchers</span> |
+                <span class="ms-movies">Gift Cards</span> |
+                <span class="ms-movies">List My Show</span> |
+                <span class="ms-movies">Offers</span> |
+                <span class="ms-movies">Stream</span> |
+                <span class="ms-movies">Buzz</span> |
+                <span class="ms-movies">Trailers</span>
+            </div>
+        </div>
+        <div class="footerlogo">
+            <hr class="hr-line2">
+            <div class="logo2">
+                <img src="./images/logo1.png" alt="logo">
+                <Span class="logostring">CINEMICA</Span>
+            </div>
+            <hr class="hr-line2">
+        </div>
+        <div class="Fr-mediaicons">
+            <img src="./images/icons8-facebook-50.png" alt="facebook">
+            <img src="./images/icons8-twitter-64.png" alt="facebook">
+            <img src="./images/icons8-instagram-50.png" alt="facebook">
+            <img src="./images/icons8-linkedin-60.png" alt="facebook">
+            <img src="./images/icons8-pinterest-50.png" alt="facebook">
+            <img src="./images/icons8-youtube-50.png" alt="facebook">
+        </div>
+        <div class="pagecopyright">
+            <div class="cp-line">Copyright 2022 @ Bigtree Entertainment Pvt. Ltd.All Rights Reserved</div>
+            <div class="cp-line">the content and images used on the site are copyright protected and copyrights vestes with the respective owner.The usage of the content and images on this website is intended to promise the works and no endordement of the artist
+            </div>
+            <div class="cp-line">shall be implied Unauthorized use is prohibited and punishable by law</div>
+
+        </div>
+
+    </footer>
+    <script src="./js/events.js"></script>
+    <script src="https://kit.fontawesome.com/2db247bd01.js" crossorigin="anonymous"></script>
+</body>
+<header>
+
+
+</html>

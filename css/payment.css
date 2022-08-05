@@ -1,0 +1,648 @@
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+#main-section {
+    width: 100%;
+    height: 819px;
+
+    background: linear-gradient(180.66deg, #2B7AFC -12.75%, #115FE1 5.24%, #0C3374 36.24%, #091629 43.98%, rgba(0, 0, 0, 0.82) 55.28%, rgba(0, 0, 0, 0) 60.16%);
+
+}
+
+#movie-info {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 8px;
+    width: 455px;
+    height: 160px;
+
+    background: linear-gradient(97.27deg, rgba(255, 255, 255, 0.2) -7.84%, rgba(255, 255, 255, 0.1) 87.49%, rgba(255, 255, 255, 0.01) 109.5%);
+    backdrop-filter: blur(4px);
+    /* Note: backdrop-filter has minimal browser support */
+    border: 1px solid rgba(255, 255, 255, 0.404);
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    /* flex: none;
+    order: 0;
+    flex-grow: 0; */
+}
+
+#payment-info {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 34px;
+    gap: 17px;
+
+    width: 773px;
+    height: 306px;
+
+    background: linear-gradient(98.73deg, rgba(255, 255, 255, 0.2) -2.23%, rgba(255, 255, 255, 0.1) 85.04%, rgba(255, 255, 255, 0.01) 105.18%);
+    backdrop-filter: blur(4px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border: 1px solid rgba(255, 255, 255, 0.404);
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    /* flex: none;
+    order: 1;
+    flex-grow: 0; */
+}
+
+#ticket-price {
+    position: relative;
+    top: -368px;
+    left: 1147px;
+    font-weight: 400;
+    font-size: 23.04px;
+    line-height: 27px;
+    width: 162px;
+}
+
+#conv-amount {
+    position: relative;
+    top: -298px;
+    left: 1191px;
+    font-weight: 400;
+    font-size: 23.04px;
+    line-height: 27px;
+}
+
+#base-amount {
+    position: relative;
+    top: -291px;
+    left: 1207px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+}
+
+#sub-conv {
+    position: relative;
+    left: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+    gap: 4px;
+}
+
+#gst1-amount {
+    position: relative;
+    top: -285px;
+    left: 1213px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+}
+
+#gst2-amount {
+    position: relative;
+    top: -280px;
+    left: 1213px;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+}
+
+#break1 {
+    width: 754px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5);
+    position: relative;
+    top: -303px;
+    left: 519px;
+}
+
+#break2 {
+    width: 754px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5);
+    position: relative;
+    top: -155px;
+    left: 519px;
+}
+
+#total-amount {
+    position: relative;
+    top: -255px;
+    left: 1147px;
+    font-weight: 400;
+    font-size: 23.04px;
+    line-height: 27px;
+}
+
+#convenience-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+    gap: 7px;
+    position: relative;
+    left: -7px;
+}
+
+#audi {
+    position: relative;
+    top: -14px;
+}
+
+#convenience,
+#total-text {
+    font-weight: 400;
+    font-size: 23.04px;
+    line-height: 27px;
+}
+
+#audi,
+#base,
+#gst1,
+#gst2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+}
+
+#ticket-info {
+    font-weight: 400;
+    font-size: 23.04px;
+    line-height: 27px;
+}
+
+#main-heading {
+    width: 245px;
+    height: 32px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27.65px;
+    line-height: 32px;
+    position: relative;
+    top: 18px;
+}
+
+#heading img {
+    width: 68px;
+    height: 68px;
+    position: relative;
+    left: 255px;
+    top: -33px;
+}
+
+#heading {
+    position: relative;
+    width: 323px;
+    height: 68px;
+    left: 37px;
+    top: 22px;
+}
+
+#movie-info {
+    position: relative;
+    top: 72px;
+}
+
+#payment-info {
+    position: relative;
+    left: 513px;
+    top: -88px;
+}
+
+#content {
+    position: relative;
+    left: 40px;
+    width: 1270px;
+}
+
+#amnt {
+    width: 109px;
+}
+
+#conv-amount {
+    width: 109px;
+
+}
+
+#base-amount {
+    width: 52px;
+
+}
+
+#gst1-amount {
+    width: 42px;
+
+}
+
+#gst2-amount {
+    width: 42px;
+
+}
+
+#total-amount {
+    width: 141px;
+}
+
+#movie-name {
+    width: 372px;
+    height: 32px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27.65px;
+    line-height: 32px;
+}
+
+#theatre {
+    width: 445px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.2px;
+    line-height: 24px;
+    /* identical to box height, or 125% */
+
+    letter-spacing: 0.01em;
+}
+
+#date,
+#time {
+    font-weight: 400;
+    font-size: 19.2px;
+    line-height: 24px;
+    /* identical to box height, or 125% */
+
+    letter-spacing: 0.01em;
+}
+
+#m-ticket-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 13px;
+
+    position: absolute;
+    width: 458px;
+    height: 90px;
+    left: 40px;
+    top: 357px;
+}
+
+#m-ticket-txt {
+    width: 470px;
+    height: 19px;
+
+    /* Body/Base/Regular */
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.6px;
+    line-height: 19px;
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    position: relative;
+    left: 9px;
+
+}
+
+#payment-mode {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 849px;
+    height: 258px;
+    left: 259px;
+    top: 510px;
+
+    background: linear-gradient(93.07deg, rgba(255, 255, 255, 0.2) -2.69%, rgba(255, 255, 255, 0.1) 89.49%, rgba(255, 255, 255, 0.01) 103.93%);
+    border: 1px solid rgba(255, 255, 255, 0.404);
+    backdrop-filter: blur(4px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 8px;
+}
+
+#option {
+    font-size: 19.2px;
+    line-height: 24px;
+    /* identical to box height, or 125% */
+
+    letter-spacing: 0.01em;
+    position: absolute;
+    width: 200px;
+    height: 24px;
+    left: 48px;
+    top: 26px;
+}
+
+#credit,
+#net,
+#upi {
+    width: 165px;
+    height: 19px;
+
+    /* Body/Base/Regular */
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#credit {
+    position: relative;
+    top: 93px;
+    left: -27px;
+}
+
+[for="credit"] {
+    position: relative;
+    top: 93px;
+    left: -27px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+#net {
+    position: relative;
+    top: 122px;
+    left: -27px;
+}
+
+[for="net"] {
+    position: relative;
+    top: 118px;
+    left: -27px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+#upi {
+    position: relative;
+    top: 147px;
+    left: -27px;
+}
+
+[for="upi"] {
+    position: relative;
+    top: 144px;
+    left: -27px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+#credit-card,
+#net-banking,
+#upi-payment {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 464px;
+    height: 167px;
+    left: 328px;
+    top: 58px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+}
+
+[for="card-numb"],
+[for="name"],
+[for="exp"],
+[for="cvv"] {
+    width: 81px;
+    height: 16px;
+
+    /* Body/Smaller-Than-Base/Regular */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.33px;
+    line-height: 16px;
+    /* identical to box height, or 120% */
+
+    letter-spacing: 0.01em;
+
+    color: rgba(0, 0, 0, 0.6);
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+[for="card-numb"] {
+    position: relative;
+    top: 10px;
+    left: 23px;
+}
+
+[for="name"] {
+    position: relative;
+    top: 4px;
+    left: 23px;
+}
+
+[for="exp"] {
+    position: relative;
+    top: -2px;
+    left: 23px;
+}
+
+[for="cvv"] {
+    position: relative;
+    top: -2px;
+    left: 119px;
+}
+
+#card-numb {
+    padding: 0px 0 0 12px;
+    position: relative;
+    top: 11px;
+    left: 40px;
+    width: 275px;
+    height: 24px;
+
+    background: #A6C7FF;
+    border: none;
+    border-radius: 4px;
+}
+
+#name {
+    padding: 0px 0 0 12px;
+    position: relative;
+    top: 4px;
+    left: 82px;
+    width: 275px;
+    height: 24px;
+
+    border: none;
+    background: #A6C7FF;
+    border-radius: 4px;
+}
+
+#exp {
+    padding: 0px 0 0 12px;
+    position: relative;
+    top: -2px;
+    left: 94px;
+    width: 45px;
+    height: 24px;
+
+    border: none;
+    background: #A6C7FF;
+    border-radius: 4px;
+
+}
+
+#cvv {
+    padding: 0px 0 0 12px;
+    position: relative;
+    top: -2px;
+    left: 139px;
+    width: 73px;
+    height: 24px;
+
+    border: none;
+    background: #A6C7FF;
+    border-radius: 4px;
+}
+
+#make-payment {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px;
+    gap: 8px;
+    width: 98px;
+    height: 30px;
+    background: #2D7CFF;
+    border-radius: 4px;
+    font-size: 13.33px;
+    line-height: 16px;
+    color: white;
+    border: none;
+    position: relative;
+    top: 66px;
+    left: 189px;
+    text-align: center;
+    padding: 6px;
+}
+
+#credit-card form button {
+    top: 16px;
+}
+#upi-payment form button {
+    top: 86px;
+}
+
+#banks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 27px;
+
+    width: 275px;
+    height: 28px;
+    background: #A6C7FF;
+    border-radius: 4px;
+    position: relative;
+    top: 17px;
+    left: 159px;
+    border: none;
+}
+
+[for="banks"] {
+    font-size: 15.3px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    top: 40px;
+    left: 16px;
+}
+
+#upi-id {
+    width: 275px;
+    height: 24px;
+    background: #A6C7FF;
+    border-radius: 4px;
+    border: none;
+    position: relative;
+    top: 39px;
+    left: 82px;
+    padding: 4px;
+}
+
+[for="upi-id"]{
+    width: 38px;
+height: 16px;
+
+/* Body/Smaller-Than-Base/Regular */
+font-weight: 400;
+font-size: 15.33px;
+line-height: 16px;
+/* identical to box height, or 120% */
+
+letter-spacing: 0.01em;
+
+color: rgba(0, 0, 0, 0.6);
+position: relative;
+top: 39px;
+left: 47px;
+}

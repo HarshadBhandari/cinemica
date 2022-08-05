@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Theatre</title>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <link rel="stylesheet" href="SelectTheatre.css">
+    <script src="SelectTheatre.js"></script>
+</head>
+
+<body>
+    <div id="header-container">
+        <header>
+            <div id="back">
+                <button id="back-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true" role="img" class="iconify iconify--ep" width="2em" height="2em"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024" data-icon="ep:arrow-left-bold"
+                        style="color: white;">
+                        <path fill="currentColor"
+                            d="M685.248 104.704a64 64 0 0 1 0 90.496L368.448 512l316.8 316.8a64 64 0 0 1-90.496 90.496L232.704 557.248a64 64 0 0 1 0-90.496l362.048-362.048a64 64 0 0 1 90.496 0z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div id="info">
+                <div id="movie-name">
+                    Rocketry: The Nambi Effect
+                </div>
+                <div id="rating">
+                    <span class="iconify" data-icon="emojione-monotone:letter-u" style="color: white;"></span>
+                </div>
+                <div id="current-date"> 3 Aug 2022
+                </div>
+                <div id="current-time">
+                    <span class="iconify" data-icon="ic:round-access-time" style="color: white;"></span>
+                    <div>
+                        2 hrs 45 mins
+                    </div>
+                </div>
+            </div>
+            <div id="dates">
+                <button id="date1" onclick="change_self()">
+                    <div id="d1">5 Aug</div>
+                </button>
+                <button id="date2" onclick="change_tom()">
+                    <div id="d2">6 Aug</div>
+                </button>
+                <button id="date3" onclick="change_next()">
+                    <div id="d3">7 Aug</div>
+                </button>
+            </div>
+        </header>
+    </div>
+    <div id="theatre">
+        <div id="_theatre1">
+            <div class="theatre-name" id="theatre-name-id">Cinepolis: Fun Republic Mall, Andheri (W)</div>
+            <div id="time1-container">
+                <a class="theatre-name-id" id="_timea1" href="seat.html"  onclick="seat(this)">04:00 PM</a>
+            </div>
+            <div id="time1-container" class=" hide-tomorrow">
+                <a class="theatre-name-id" id="_timeb1" href="seat.html"  onclick="seat(this)">07:00 PM</a>
+            </div>
+            <div id="time1-container" class=" hide-tomorrow hide-next">
+                <a class="theatre-name-id" id="_timec1" href="seat.html"  onclick="seat(this)">09:00 PM</a>
+            </div>
+        </div>
+        <div id="_theatre2">
+            <div class="theatre-name" id="theatre-name-id2">MovieMax: Eternity Mall, Thane</div>
+            <div id="time1-container">
+                <a class="theatre-name-id2" id="_timea2" href="seat.html"  onclick="seat(this)">09:00 AM</a>
+            </div>
+            <div id="time1-container" class=" hide-next">
+                <a class="theatre-name-id2" id="_timeb2" href="seat.html"  onclick="seat(this)">12:00 PM</a>
+            </div>
+            <div id="time1-container" class=" hide-next hide-today">
+                <a class="theatre-name-id2" id="_timec2" href="seat.html"  onclick="seat(this)">06:00 PM</a>
+            </div>
+        </div>
+        <div id="_theatre3">
+            <div class="theatre-name" id="theatre-name-id3">
+                Miraj Anupam Cinemas: Goregaon (E)</div>
+            <div id="time1-container">
+                <a class="theatre-name-id3" id="_timea3" href="seat.html"  onclick="seat(this)">01:30 PM</a>
+            </div>
+            <div id="time1-container" class=" hide-today">
+                <a class="theatre-name-id3" id="_timeb3" href="seat.html"  onclick="seat(this)">03:40 PM</a>
+            </div>
+            <div id="time1-container" class=" hide-tomorrow hide-today">
+                <a class="theatre-name-id3" id="_timec3" href="seat.html"  onclick="seat(this)">07:00 PM</a>
+            </div>
+        </div>
+        <div id="_theatre4">
+            <div class="theatre-name" id="theatre-name-id4">
+                PVR: Lodha Xperia, Palava</div>
+            <div id="time1-container">
+                <a class="theatre-name-id4" id="_timea4" href="seat.html"  onclick="seat(this)">09:00 AM</a>
+            </div>
+            <div id="time1-container" class="">
+                <a class="theatre-name-id4" id="_timeb4" href="seat.html"  onclick="seat(this)">12:00 PM</a>
+            </div>
+            <div id="time1-container" class=" hide-today">
+                <a class="theatre-name-id4" id="_timec4" href="seat.html"  onclick="seat(this)">06:00 PM</a>
+            </div>
+        </div>
+        <div id="_theatre5">
+            <div class="theatre-name" id="theatre-name-id5">
+                Miraj V Cinemas: Dombivali</div>
+            <div id="time1-container">
+                <a class="theatre-name-id5" id="_timea5" href="seat.html"  onclick="seat(this)">10:45 AM</a>
+            </div>
+            <div id="time1-container" class=" hide-tomorrow">
+                <a class="theatre-name-id5" id="_timeb5" href="seat.html"  onclick="seat(this)">12:00 PM</a>
+            </div>
+            <div id="time1-container" class=" hide-tomorrow hide-next">
+                <a class="theatre-name-id5" id="_timec5" href="seat.html"  onclick="seat(this)">02:00 PM</a>
+            </div>
+        </div>
+        <div id="_theatre6">
+            <div class="theatre-name" id="theatre-name-id6">
+                Cinepolis: Nexus Seawoods, Navi Mumbai</div>
+            <div id="time1-container">
+                <a class="theatre-name-id6" id="_timea6" href="seat.html"  onclick="seat(this)">9:00 AM</a>
+            </div>
+            <div id="time1-container" class=" hide-next">
+                <a class="theatre-name-id6" id="_timeb6" href="seat.html"  onclick="seat(this)">11:00 AM</a>
+            </div>
+            <div id="time1-container" class=" hide-next hide-today hide-tomorrow">
+                <a class="theatre-name-id6" id="_timec6" href="seat.html"  onclick="seat(this)">06:00 PM</a>
+            </div>
+        </div>
+        <div id="_theatre7">
+            <div class="theatre-name" id="theatre-name-id7">
+                INOX: Metro Mall Junction, Kalyan (E)</div>
+            <div id="time1-container">
+                <a class="theatre-name-id7" id="_timea7" href="seat.html"  onclick="seat(this)">04:50 PM</a>
+            </div>
+            <div id="time1-container" class=" hide-next">
+                <a class="theatre-name-id7" id="_timeb7" href="seat.html"  onclick="seat(this)">11:00 PM</a>
+            </div>
+            <div id="time1-container" class=" hide-next hide-today hide-tomorrow">
+                <a class="theatre-name-id7" id="_timec7" href="seat.html"  onclick="seat(this)">06:00 PM</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="SelectTheatre.js"></script>
+</body>
+
+</html>

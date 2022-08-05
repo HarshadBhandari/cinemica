@@ -1,0 +1,1523 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@font-face {
+    font-family: logofont;
+    src: url(../font/Codystar-Regular.ttf);
+}
+
+@font-face {
+    font-family: PrimaryFontRoboto;
+    src: url(../font/Roboto-Light.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 5900px !important;
+}
+
+body {
+    height: 5900px !important;
+    width: 1366px !important;
+    overflow-x: hidden;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    background-image: linear-gradient(268deg, #bdc3c7, #2c3e50) !important;
+}
+
+ ::-webkit-scrollbar {
+    width: 16px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #06062e;
+    /* border-radius: 16px; */
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: #ff0037;
+    border-radius: 16px;
+}
+
+
+/*navbar section------------------------------------------------------------->*/
+
+#navigationBar {
+    position: sticky;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    /* border-radius: 30px; */
+    /* border: 1px solid white; */
+    font-family: 'PrimaryFontRoboto', sans-serif !important;
+    font-size: 15px !important;
+    line-height: normal !important;
+    height: 70px;
+    width: 1366px;
+}
+
+.logo img {
+    width: 50px;
+    height: 52px;
+    margin: 0px 10px;
+    padding: 5px 0px;
+    position: relative;
+    top: 0px;
+    left: 17px;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo div {
+    text-align: center;
+    justify-content: center;
+    margin: 2px 0px 0px 0px;
+    padding: 5px 3px;
+    font-family: 'logofont', cursive !important;
+    color: rgb(245, 245, 239);
+    font-style: bold !important;
+    font-size: 34px!important;
+    position: relative;
+    left: 10px;
+}
+
+
+/* #navbar {
+    
+} */
+
+.Searchbox {
+    position: relative;
+    left: 46px;
+    align-items: center;
+    bottom: 0px;
+}
+
+.Searchbox input {
+    font-family: 'PrimaryFontRoboto', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    color: black;
+    border: 1px;
+    border-radius: 5px;
+    padding-inline: 20px;
+    width: 410px;
+    height: 31px;
+    outline: none;
+    outline: none;
+}
+
+.SignIn {
+    font-family: 'PrimaryFontRoboto', sans-serif !important;
+    color: white;
+    position: absolute;
+    right: 100px;
+    font-style: Bold !important;
+    font-size: 16px !important;
+    background-color: #ff0037;
+    justify-content: center;
+    top: 20px;
+    width: 80px;
+    height: 33px;
+    border-radius: 9px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.menuimage img {
+    position: absolute;
+    right: 40px;
+    top: 17px;
+    background-color: transparent;
+    width: 39px;
+}
+
+#navbar2 {
+    display: flex;
+    background-color: #06062e;
+    height: 35px;
+    width: 1366px;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 300 !important;
+    line-height: normal !important;
+}
+
+.opt1 ul {
+    display: flex;
+    color: white;
+}
+
+.opt1 ul li a {
+    Text-decoration: none;
+    color: white;
+    padding: 3px 18px;
+    margin: 2px;
+    font-family: 'PrimaryFontRoboto', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    line-height: 10px !important;
+    border: 1px solid #06062e;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.opt1 ul li :hover {
+    border-color: black !important;
+    background-color: #ff0037 !important;
+}
+
+.opt1 ul :hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.opt1 ul :active {
+    transform: scale(.90);
+    z-index: 2;
+}
+
+.opt1 ul li {
+    list-style: none;
+}
+
+.opt2 ul {
+    display: flex;
+    color: white;
+}
+
+.opt2 ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 3px 18px;
+    margin: 2px;
+    font-family: 'PrimaryFontRoboto', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    line-height: 10px !important;
+    border: 1px solid #06062e;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.opt2 ul li :hover {
+    border-color: black !important;
+    background-color: #ff0037 !important;
+}
+
+.opt2 ul :hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.opt2 ul :active {
+    transform: scale(.90);
+    z-index: 2;
+}
+
+.opt2 ul li {
+    list-style: none;
+}
+
+.opt2 {
+    position: absolute;
+    right: 50px;
+    top: 80px
+}
+
+.opt1 {
+    position: absolute;
+    left: 30px;
+    top: 80px;
+}
+
+.SignIn:hover {
+    color: #ff0037;
+    background-color: white;
+    border-color: #ff0037;
+}
+
+.SignIn:active {
+    transition: all 0s ease-in-out !important;
+    transform: scale(.90);
+    z-index: 2;
+}
+
+header {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    border-bottom: 1.5px solid white;
+    width: 1366px;
+}
+
+.Seachicon {
+    width: 50px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: #ff0037;
+    color: white;
+    font-size: 18px;
+}
+
+.Seachicon:active {
+    transform: scale(0.98);
+    z-index: 2;
+}
+
+
+/* right slide menu bar -------------------------->*/
+
+#myslidermenu {
+    position: absolute;
+    right: -350px;
+    width: 350px;
+    height: 768px;
+    border-left: 1px solid black;
+    transition: smooth;
+    transition: .5s;
+    background: white !important;
+    z-index: 10;
+}
+
+.menuheader h2 {
+    color: white;
+    font-family: 'PrimaryFontRoboto', sans-serif;
+    background: rgb(4, 4, 59);
+    padding: 14px;
+    font-size: 20px !important;
+}
+
+#myslidermenu ul li {
+    list-style-type: none;
+    padding: 15px;
+    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(241, 241, 241);
+    font-family: 'PrimaryFontRoboto', sans-serif;
+    font-size: 18px;
+    display: flex;
+}
+
+#myslidermenu ul li i {
+    margin-right: 10px;
+    font-size: 20px
+}
+
+#myslidermenu ul li p {
+    position: absolute;
+    left: 60px;
+}
+
+#myslidermenu ul li:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+.arrow {
+    position: absolute;
+    right: 0;
+    color: #ff0037
+}
+
+.menuheader h2 i {
+    position: absolute !important;
+    right: 8px !important;
+}
+
+#unlock {
+    display: flex;
+    /* margin-top: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'PrimaryFontRoboto', sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 6px #e28b9e;
+}
+
+#unlock img {
+    width: 40px;
+    height: 40px;
+}
+
+#unlock p {
+    width: 150px;
+    position: relative;
+    left: 10px;
+    top: auto;
+}
+
+.btn2signin {
+    margin-left: 30px;
+    padding: 10px;
+    border: 1px solid #ff0037;
+    border-radius: 9px;
+    color: #ff0037;
+    border-color: #ff0037;
+    background-color: white;
+    font-family: 'PrimaryFontRoboto', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.btn2signin:hover {
+    color: white;
+    background-color: #ff0037;
+    border-color: white;
+}
+
+.btn2signin:active {
+    transition: all 0s ease-in-out !important;
+    transform: scale(.98);
+    z-index: 2;
+}
+
+#myslidermenu ul {
+    padding-left: 0rem !important;
+}
+
+.active-page {
+    border-color: black !important;
+    background-color: #ff0037 !important;
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+
+/* right slide menu bar --------------------------> ends*/
+
+
+/*Theater hall section starts--------------------->  */
+
+#theaterhallsection {
+    /* position: relative;
+    top: 105px; */
+    width: 1350px;
+    height: 450px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.41), rgba(0, 0, 0, 0.56)), url("../images/Theaterhall\ \(1\).jpg");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    padding: 0px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#theaterhallsection .entergift {
+    width: 600px;
+    height: 400px;
+}
+
+#theaterhallsection .getbacktous {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parentstring {
+    position: relative;
+    top: 40px;
+}
+
+.entertainstring {
+    width: 600px;
+    margin-top: 10px;
+    height: 70px;
+    position: relative;
+    top: 40px;
+}
+
+.explainstring {
+    width: 600px;
+    height: 70px;
+    position: relative;
+    top: 30px;
+}
+
+.brochure {
+    width: 600px;
+    height: 70px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 15px;
+}
+
+.brochure p {
+    font-family: 'PrimaryFontRoboto';
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.5mm;
+    text-align: center;
+    color: white;
+    text-align: center;
+    margin-left: 25px;
+}
+
+.entertainstring h1 {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 32px;
+    letter-spacing: 0.5mm;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.explainstring p {
+    font-family: 'PrimaryFontRoboto';
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.5mm;
+    text-align: center;
+    color: white;
+    text-align: center;
+}
+
+.brochure i {
+    margin-right: 8px;
+}
+
+.getbacktous .parentform {
+    width: 350px;
+    height: 400px;
+    border: 1px solid green;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.getbacktous .parentform .myform {
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.myform label {
+    font-family: 'PrimaryFontRoboto';
+    font-size: 14px;
+    align-self: center;
+}
+
+.myform input {
+    font-family: 'PrimaryFontRoboto';
+    font-size: 15px;
+    font-weight: 600;
+    padding-inline: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 275px;
+}
+
+.myform .elemts {
+    margin-top: 15px;
+}
+
+.myform .elemts1 {
+    margin-top: 25px;
+}
+
+.receivecall {
+    width: 275px;
+    background-color: #ff0037;
+    font-family: 'PrimaryFontRoboto';
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.receivecall:active {
+    transform: scale(0.98);
+    z-index: 2;
+}
+
+.brochure p:hover {
+    color: blue;
+}
+
+
+/*Theater hall section Ends--------------------->  */
+
+
+/*our Partners Starts--------------------->  */
+
+#ourpartners {
+    width: 1350px;
+    height: 200px;
+    /* position: relative;
+    top: 110px; */
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourpartners-frame {
+    width: 1200px;
+    height: 200px;
+    background-color: white;
+}
+
+.partenerstring h4 {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 0.9mm;
+    margin-top: 10px;
+}
+
+.partnerlogo {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 23px;
+}
+
+.partnerlogo .partnerslogo {
+    width: 60px;
+    height: 60px;
+    margin-right: 90px;
+}
+
+.partnerlogo .partnerslogo2 {
+    width: 120px;
+    height: 60px;
+    margin-right: 50px;
+}
+
+#ticketsSold {
+    width: 1350px;
+    height: 150px;
+    /* position: relative;
+    top: 60px; */
+    /* margin-top: 5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticketsSold-box {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    position: relative;
+    left: 5px;
+}
+
+.ticketsSold-box h3,
+h4 {
+    text-align: center;
+}
+
+.ticketsSold-box h3 {
+    font-family: 'Oswald';
+    font-size: 24px;
+    font-weight: 900;
+    color: black;
+    position: relative;
+    top: 10px;
+}
+
+.ticketsSold-box h4 {
+    font-family: 'Oswald';
+    font-size: 18px;
+    font-weight: 900;
+    color: black;
+    position: relative;
+    top: 5px;
+}
+
+#brandpromaotion {
+    width: 1350px;
+    height: 400px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brandpromaotion-frame {
+    width: 1200px;
+    height: 400px;
+    display: flex;
+}
+
+.bp-frame1,
+.bp-frame2 {
+    width: 600px;
+    height: 400px;
+}
+
+.bp-frame2 img {
+    width: 600px;
+    height: 400px;
+    object-fit: fill;
+}
+
+.bp-frame1 {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bp-frame1 .rowstring1 {
+    margin-top: 80px;
+    width: 600px;
+    height: 100px;
+}
+
+.bp-frame1 .rowstring2 {
+    width: 600px;
+    height: 100px;
+    margin: 0;
+    position: relative;
+    bottom: 20px;
+}
+
+.bp-frame1 .rowstring3 {
+    width: 600px;
+    height: 60px;
+    margin: 20px;
+    position: relative;
+    bottom: 25px;
+}
+
+.bp-frame1 .rowstring1 h4 {
+    font-family: 'Oswald';
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1mm;
+    margin-top: 5px;
+    margin-left: 50px;
+    text-align: left;
+    color: rgb(102, 102, 102);
+}
+
+.bp-frame1 .rowstring1 h1 {
+    font-family: 'PrimaryFontRoboto';
+    font-size: 32px;
+    font-weight: bolder;
+    letter-spacing: 1mm;
+    margin-top: 5px;
+    margin-left: 50px;
+    text-align: left;
+    color: Black;
+    position: relative;
+    bottom: 10px;
+}
+
+.bp-frame1 .rowstring2 p {
+    margin-left: 50px;
+    margin-top: 5px;
+    font-family: 'PrimaryFontRoboto';
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+    ;
+}
+
+.bp-frame1 .rowstring3 .bppromote {
+    margin-left: 50px;
+    margin-top: 15px;
+    font-family: 'PrimaryFontRoboto';
+    font-size: 18px;
+    font-weight: 400;
+    padding: 8px 15px 8px 15px;
+    width: 270px;
+    background-color: white;
+    color: #ff0037;
+    border-radius: 5px;
+    border: 1px solid #ff0037;
+}
+
+.bp-frame1 .rowstring3 .bp-engageemp {
+    margin-left: 50px;
+    margin-top: 5px;
+    font-family: 'PrimaryFontRoboto';
+    font-size: 18px;
+    font-weight: 400;
+    padding: 8px 15px 8px 15px;
+    width: 270px;
+    background-color: white;
+    color: #ff0037;
+    border-radius: 5px;
+    border: 1px solid #ff0037;
+    position: relative;
+    bottom: 40px;
+}
+
+.bp-frame1 .rowstring3 .bppromote:active {
+    transform: scale(0.98);
+    z-index: 2;
+}
+
+.bp-frame1 .rowstring3 .bp-engageemp:active {
+    transform: scale(0.98);
+    z-index: 2;
+}
+
+
+/*our Partners Ends--------------------->  */
+
+
+/* suits of busineess solution ------------------------------------------>Starts */
+
+#suitofbusiness {
+    width: 1350px;
+    height: 400px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secondparent-suitofbusiness {
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.suitofbusiness-Imageframe {
+    width: 1200px;
+    height: 330px;
+    display: flex;
+}
+
+.suitofbusiness-Imageframe img {
+    width: 400px;
+    height: 330px;
+    object-fit: cover;
+}
+
+.suitofbusiness-Imageframe h2 {
+    font-family: 'Oswald';
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.8mm;
+    color: white;
+    margin-left: 50px;
+    margin-top: 110px;
+}
+
+#suitofbusiness .suitofbusiness-stringframe {
+    width: 1200px;
+    height: 50px;
+}
+
+.imageframebox {
+    width: 1200px;
+    height: 50px;
+}
+
+#suitofbusiness .suitofbusiness-stringframe h4 {
+    font-family: 'Oswald';
+    font-size: 15px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-left: 50px;
+    letter-spacing: 1mm;
+    text-align: left;
+    margin-top: 14px;
+}
+
+.imageframebox1 {
+    width: 1200px;
+    height: 330px;
+    background-image: url('../images/green.avif');
+}
+
+.imageframebox2 {
+    width: 1200px;
+    height: 330px;
+    background-image: url('../images/red.avif');
+}
+
+.imageframebox3 {
+    width: 1200px;
+    height: 330px;
+    background-image: url('../images/yellow.avif');
+}
+
+
+/* suits of busineess solution ------------------------------------------>Ends */
+
+
+/* completesuit ------------------------------------------------------------>Starts */
+
+#completesuit {
+    width: 1350px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.comletesuit-frame1 {
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.comletesuit-frame1 h3 {
+    font-family: 'PrimaryFontRoboto';
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #2c3e50;
+    text-align: left;
+    margin-right: 250px;
+}
+
+.comletesuit-frame1 .accessSuit {
+    font-family: 'PrimaryFontRoboto';
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    color: white;
+    background-color: #ff0037;
+    border-radius: 5px;
+    border: 1px solid #ff0037;
+    padding: 12px 12px 12px 12px;
+}
+
+.comletesuit-frame1 .accessSuit:active {
+    transform: scale(0.98);
+    z-index: 2;
+}
+
+
+/* completesuit ------------------------------------------------------------>ends */
+
+
+/* ourproduct-------------------------->starts */
+
+#ourproduct {
+    width: 1350px;
+    height: 500px;
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourproduct-parentframe {
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.ourproduct-frame1 {
+    width: 1200px;
+    height: 70px;
+}
+
+.ourproduct-frame1 h2 {
+    font-family: 'Oswald';
+    font-size: 16px;
+    font-weight: 900;
+    color: #2c3e50;
+    margin-left: 50px;
+    letter-spacing: 1mm;
+    text-align: left;
+    margin-top: 22px;
+}
+
+.ourproduct-frame2 {
+    width: 1200px;
+    height: 430px;
+    display: flex;
+}
+
+.ourproduct-frame2-parts1 {
+    width: 600px;
+    height: 430px;
+    background-image: url('../images/movie-voucher.avif');
+    background-size: fill;
+    display: flex;
+    flex-direction: column;
+}
+
+.ourproduct-frame2-parts2 {
+    width: 600px;
+    height: 430px;
+    background-image: url('../images/gift-voucher.avif');
+    background-size: fill;
+    display: flex;
+    flex-direction: column;
+}
+
+.ourproduct-frame2-parts1 h1,
+.ourproduct-frame2-parts2 h1 {
+    color: white;
+    position: relative;
+    left: 100px;
+    top: 80px;
+    font-family: 'PrimaryFontRoboto';
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.ourproduct-frame2-parts1 p,
+.ourproduct-frame2-parts2 p {
+    color: white;
+    position: relative;
+    left: 100px;
+    top: 80px;
+    margin-top: 10px;
+    font-family: 'PrimaryFontRoboto';
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5mm;
+    line-height: 26px;
+}
+
+.ourproduct-frame2-parts1 .op-enqire,
+.ourproduct-frame2-parts2 .op-enqire {
+    position: relative;
+    left: 100px;
+    top: 80px;
+    width: 150px;
+    margin-top: 20px;
+    height: 50px;
+    padding: 10px 15px 10px 15px;
+    background: white;
+    color: #ff0037;
+    border: 1px solid #ff0037;
+    border-radius: 5px;
+    font-family: 'PrimaryFontRoboto';
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.5mm;
+}
+
+.ourproduct-frame2-parts1 .op-enqire:active,
+.ourproduct-frame2-parts2 .op-enqire:active {
+    transform: scale(0.98);
+    z-index: 2;
+}
+
+
+/* ourproduct-------------------------->Ends */
+
+
+/* Bulk booking--------------------------------------------------------------->Starts */
+
+#bulkBooking {
+    width: 1350px;
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#bulkBooking .bulkbooking-frame {
+    width: 1200px;
+    height: 275px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.56)), url('../images/bulk-booking.avif');
+    background-size: cover;
+    display: flex;
+}
+
+.bulkbooking-frame-part1 {
+    width: 600px;
+    height: 275px;
+}
+
+.bulkbooking-frame-part1 h3 {
+    font-family: 'Lucida Sans';
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    margin-left: 50px;
+    margin-top: 70px;
+    letter-spacing: 0.8mm;
+}
+
+.bulkbooking-frame-part1 h1 {
+    font-family: 'PrimaryfontRoboto';
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin-left: 50px;
+    margin-top: 10px;
+    letter-spacing: 0.8mm;
+}
+
+.bulkbooking-frame-part2 {
+    width: 600px;
+    height: 275px;
+}
+
+.bulkbooking-frame-part2 .bulkExploreNow {
+    background-color: #ff0037;
+    color: white;
+    padding: 12px 15px 12px 15px;
+    width: 350px;
+    border: 1px solid #ff0037;
+    border-radius: 5px;
+    font-family: 'PrimaryFontRoboto';
+    font-size: 17px;
+    font-weight: 900;
+    position: relative;
+    top: 110px;
+    left: 170px;
+    letter-spacing: 0.8mm;
+}
+
+.bulkbooking-frame-part2 .bulkExploreNow:active {
+    transform: scale(0.98);
+    z-index: 2;
+}
+
+
+/* Bulk booking--------------------------------------------------------------->Ends */
+
+
+/* testimonial------------------------------------------------------------->starts */
+
+#testimonials {
+    width: 1350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonialframe1 {
+    width: 1200px;
+    height: 50px;
+}
+
+.testimonialframe2 {
+    width: 1200px;
+    height: 225px;
+}
+
+.testimonialframe1 h4 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    font-size: 19px;
+    font-weight: 900;
+    color: white;
+    margin-top: 8px;
+    letter-spacing: 1mm;
+}
+
+.parenttestimonial {
+    width: 1200px;
+    height: 225px;
+    display: flex;
+    background-color: white;
+}
+
+.testimonialleftpart {
+    width: 300px;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonialleftpart img {
+    width: 100px;
+    height: 70px;
+}
+
+.testimonialrightpart {
+    width: 900px;
+    height: 225px;
+    display: flex;
+}
+
+.testimonialrightpart .vertcal {
+    height: 212.5px;
+    width: 0.19px;
+    border-left: 2.99px solid rgb(175, 173, 173);
+    position: relative;
+    left: 10px;
+    top: 6.5px;
+}
+
+.testistring {
+    width: 850px;
+    height: 80px;
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+.testistring p {
+    font-family: 'PrimaryFontRoboto' !important;
+    font-size: 16px !important;
+    color: black;
+    line-height: 23px !important;
+}
+
+.companyexecutive {
+    width: 400px;
+    height: 100px;
+    position: relative;
+    top: 20px;
+}
+
+.companyexecutive h3 {
+    font-family: 'PrimaryFontRoboto'!important;
+    font-size: 20px !important;
+    color: black;
+}
+
+.carousel-control-prev {
+    left: -70px;
+    filter: invert(100%) !important;
+}
+
+.carousel-control-next {
+    right: -70px;
+    filter: invert(100%) !important;
+}
+
+
+/* testimonial------------------------------------------------------------->Ends */
+
+
+/* partner with us--------------------------------------------------------->Starts */
+
+.partnerwithus {
+    width: 1350;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partnerwithusbutton {
+    font-family: 'PrimaryFontRoboto';
+    color: White;
+    background-color: #ff0037;
+    padding: 10px 15px 10px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid #ff0037;
+    border-radius: 5px;
+    width: 300px;
+    position: relative;
+    bottom: 10px;
+}
+
+.partnerwithusbutton:active {
+    transform: scale(0.98);
+    z-index: 2;
+}
+
+
+/* partner with us--------------------------------------------------------->Ends */
+
+
+/* footerdesign starts-----------------------------------------------------------> */
+
+.cinemafooter {
+    width: 1366px;
+    height: 1270px;
+    background-color: rgb(51, 51, 56);
+    position: absolute;
+    bottom: 0;
+}
+
+.listyourshow {
+    width: 1366px;
+    height: 80px;
+    display: flex;
+    color: white;
+}
+
+.contactus {
+    font-family: 'PrimaryFontRoboto', sans-serif !important;
+    color: white;
+    position: relative;
+    left: 340px;
+    top: 19px;
+    font-style: Bold !important;
+    font-size: 16px !important;
+    background-color: rgb(236, 94, 113);
+    justify-content: center;
+    width: 160px;
+    height: 40px;
+    border-radius: 9px;
+    /* transition: all 0.5s ease-in-out; */
+    border: 0px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.listyourString {
+    font-family: 'PrimaryFontRoboto';
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    left: 190px;
+    top: 30px;
+}
+
+.listyourshow img {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 20px;
+    left: 154px;
+}
+
+.fsString1 {
+    font-family: 'PrimaryFontRoboto';
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    left: 165px;
+    top: 29px;
+}
+
+.contactus::before {
+    content: "" !important;
+    position: absolute !important;
+    background: #eae4e6 !important;
+    width: 8px !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: -32px !important;
+    transform: rotate(-16deg) !important;
+    filter: blur(6px) !important;
+}
+
+.contactus:hover::before {
+    left: calc(100% + 32px) !important;
+    transition: 0.95s !important;
+}
+
+.contactus:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #ff0037;
+}
+
+.contactus:active {
+    transform: scale(0.98);
+    z-index: 2;
+}
+
+
+/* customer support */
+
+.customersupport {
+    width: 1366px;
+    height: 110px;
+    background-color: rgb(64, 64, 67);
+}
+
+.cs-support {
+    display: flex;
+}
+
+.customersupport .support img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.customersupport .support .img1 {
+    position: relative;
+    left: 33px;
+}
+
+.customersupport .support .img2 {
+    position: relative;
+    left: 70px;
+}
+
+.customersupport .support .img3 {
+    position: relative;
+    left: 65px;
+}
+
+.customersupport .support {
+    margin-left: 150px;
+    margin-top: 12px;
+    position: relative;
+    left: 130px;
+    font-family: 'PrimaryFontRoboto' !important;
+    font-size: 12px !important;
+    font-weight: 900 !important;
+    color: #858889 !important;
+}
+
+.customersupport .support:hover {
+    color: white !important;
+}
+
+
+/* Movies shown in mumbai */
+
+.mumbaishow {
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    color: #858889 !important;
+}
+
+.mumbaishow .ms-string1 {
+    font-family: 'PrimaryFontRoboto' !important;
+    font-size: 12px !important;
+    font-weight: 900 !important;
+}
+
+.mumbaishow .ms-movies {
+    font-family: 'PrimaryFontRoboto' !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    cursor: pointer;
+}
+
+.mumbaishow .ms-movies:hover {
+    color: white;
+}
+
+.ms-allmovies {
+    margin-top: 5px;
+}
+
+
+/* Footer logo */
+
+.footerlogo {
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerlogo .logo2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerlogo .logo2 img {
+    width: 55px;
+    height: 55px;
+    margin-left: 5px;
+}
+
+.footerlogo .logo2 .logostring {
+    margin-left: 5px;
+    font-family: 'logofont';
+    color: white;
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.footerlogo .hr-line {
+    width: 500px;
+    color: white;
+    height: 0.99px;
+}
+
+.Fr-mediaicons {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Fr-mediaicons img {
+    width: 37px;
+    height: 37px;
+    object-fit: cover;
+    margin-right: 20px;
+    position: relative;
+    left: 17px;
+}
+
+.Fr-mediaicons img:hover {
+    filter: invert(100%);
+}
+
+.Fr-mediaicons img:active {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+
+/* copyright */
+
+.pagecopyright {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 30px;
+}
+
+.pagecopyright .cp-line {
+    font-family: 'PrimaryFontRoboto' !important;
+    font-size: 12px !important;
+    font-weight: 900 !important;
+    color: #858889 !important;
+}
+
+
+/* footerdesign ends-----------------------------------------------------------> */

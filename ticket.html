@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Ticket</title>
+    <link rel="stylesheet" href="ticket.css">
+    <script src="ticket.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <section id="main-section">
+        <div id="your-ticket">
+            <div id="movie-name">Rocketry: The Nambi Effect</div>
+            <div id="lang">Hindi, 2D</div>
+            <div id="theatre-name">Cinepolis: Viviana Mall, Thane</div>
+            <div id="date">4 Aug 2022</div>
+            <div id="time">06:45 PM</div>
+            <div id="ticket-numb">1 Ticket</div>
+            <div id="seat-numb">N14, N15</div>
+            <div id="amnt">Rs. 536.00</div>
+            <div id="audi">Audi 1</div>
+            <div id="qr">
+                <img src="./my-img/qr-code.png" alt="">
+            </div>
+            <div id="b-id">Booking ID: 230293</div>
+            <div id="m-ticket">
+                <img src="./my-img/m-ticket.png" alt="ticket">
+                <div id="m-txt">
+                    Show the m-ticket QR Code on your mobile to enter the cinema.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        window.onload = function () {
+            swal({
+                title: "payment Successful",
+                text: "Ticket has been sent to your registered mobile number",
+                icon: "success",
+                button: "ok",
+            });
+            return false;
+            window.location.href = "ticket.htm";
+        }
+    </script>
+</body>
+</html>

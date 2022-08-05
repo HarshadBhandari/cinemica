@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+    <script src="payment.js"></script>
+
+</head>
+
+<body>
+    <section id="main-section">
+        <div id="heading">
+            <div id="main-heading">
+                Booking Summary
+            </div>
+            <img src="./my-img/ticket.png" alt="ticket">
+        </div>
+
+        <div id="content">
+            <div id="movie-info">
+                <div id="movie-name">
+                    Rocketry
+                </div>
+                <div id="theatre">Cinepolis: Viviana Mall, Thane</div>
+                <div id="date">4 Aug 2022</div>
+                <div id="time">06:45 PM</div>
+            </div>
+
+            <div id="payment-info">
+                <div id="ticket-info">
+                    N14, N15
+                </div>
+                <div id="audi">Audi 1</div>
+                <div id="convenience-container">
+                    <div id="convenience">Convenience fees</div>
+                    <div id="sub-conv">
+                        <div id="base">Base Amount</div>
+                        <div id="gst1">Central GST (CGST)</div>
+                        <div id="gst2">State GST (CGST)</div>
+                    </div>
+                </div>
+                <div id="total-text">Total</div>
+            </div>
+            <div id="break1"></div>
+            <div id="break2"></div>
+            <div id="amnt">
+                <div id="ticket-price">Rs. 480.00</div>
+                <div id="conv-amount">Rs. 56</div>
+                <div id="base-amount">Rs. 48</div>
+                <div id="gst1-amount">Rs. 4</div>
+                <div id="gst2-amount">Rs. 4</div>
+                <div id="total-amount">Rs. 536.00</div>
+            </div>
+        </div>
+
+        <div id="m-ticket-cont">
+            <img src="./my-img/m-ticket.png" alt="ticket">
+            <div id="m-ticket-txt">
+                Show the m-ticket QR Code on your mobile to enter the cinema.
+            </div>
+        </div>
+
+        <div id="payment-mode">
+            <div id="option">
+                Payment Option
+            </div>
+            <div id="mode">
+                <input type="radio" id="credit" name="fav_language" value="Credit Card/Debit Card" checked
+                    onchange="hide1()">
+                <label for="credit">Credit Card/Debit Card</label><br>
+                <input type="radio" id="net" name="fav_language" value="Net Banking" onchange="hide2()">
+                <label for="net">Net Banking</label><br>
+                <input type="radio" id="upi" name="fav_language" value="UPI" onchange="hide3()">
+                <label for="upi">UPI</label><br>
+            </div>
+            <div id="credit-card">
+                <form action="ticket.html">
+                    <label for="card-numb">Card Number</label>
+                    <input type="number" id="card-numb" name="card-numb" placeholder="Enter Card Number"
+                        required><br><br>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name On The Card" required><br><br>
+
+                    <label for="exp">Exp</label>
+                    <input type="number" id="exp" name="exp" placeholder="MM" required>
+                    <input type="number" id="exp" name="exp" placeholder="YYYY" required>
+
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+
+                    <button type="submit" id="make-payment" onclick="call()">Make Payment</button>
+                </form>
+            </div>
+
+            <div id="net-banking">
+                <form action="ticket.html">
+                    <label for="banks">Choose a Bank</label>
+                    <select name="banks" id="banks">
+                        <option value="Axis Bank">Axis Bank</option>
+                        <option value="Bank Of Baroda">Bank Of Baroda</option>
+                        <option value="Canara Bank">Canara Bank</option>
+                        <option value="ICICI Bank">ICICI Bank</option>
+                        <option value="Dombivli Nagarik Bank">Dombivli Nagarik Bank</option>
+                        <option value="Union Bank">Union Bank</option>
+                        <option value="Uco Bank">Uco Bank</option>
+                        <option value="Punjab Bank">Punjab Bank</option>
+                    </select>
+                    <button type="submit" id="make-payment" onclick="call()">Make Payment</button>
+                </form>
+            </div>
+
+            <div id="upi-payment">
+                <form action="ticket.html">
+                <label for="upi-id">UPI ID</label>
+                <input type="text" id="upi-id" name="upi-id" placeholder="Enter UPI ID" required>
+                <button type="submit" id="make-payment" onclick="call()">Make Payment</button>
+                </form>
+            </div>
+        </div>
+        </div>
+
+
+    </section>
+
+
+    
+</body>
+
+</html>
